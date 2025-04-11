@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entropy Seed Phrase Poker - by AVB</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; min-height: 100vh; margin: 0; transition: background-color 0.3s, color 0.3s; position: relative; }
+        body.light { background-color: #f0f0f0; color: #333; }
+        body.dark { background-color: #1a1a1a; color: #e0e0e0; }
+        #container { text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); background-color: inherit; }
+        .card-container { display: flex; justify-content: center; gap: 20px; margin: 20px 0; }
+        .card { width: 120.75px; height: 169.05px; border: 2px solid #000; border-radius: 10px; position: relative; background-color: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-size: 36px; font-family: Arial, sans-serif; }
+        #blue-card { box-shadow: 0 0 8px rgba(0, 0, 255, 0.5); }
+        #orange-card { box-shadow: 0 0 8px rgba(255, 98, 0, 0.5); }
+        .card.red { color: #ff0000; }
+        .suit-top-left { position: absolute; top: 5px; left: 5px; font-size: 26.4px; }
+        .suit-bottom-right { position: absolute; bottom: 5px; right: 5px; font-size: 26.4px; }
+        .x-marker { position: absolute; bottom: 5px; left: 5px; font-size: 18px; color: #0000ff; }
+        .card-rank { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        button { padding: 10px 20px; margin: 5px; font-size: 16px; cursor: pointer; border: none; border-radius: 5px; background-color: #4CAF50; color: white; transition: background-color 0.3s; }
+        button:disabled { background-color: #cccccc; cursor: not-allowed; }
+        button:hover:not(:disabled) { background-color: #45a049; }
+        #startButton { background-color: #4CAF50; color: white; }
+        #startButton:disabled { background-color: #cccccc; }
+        #startButton:hover:not(:disabled) { background-color: #45a049; }
+        #themeToggle { background-color: #555; }
+        #themeToggle:hover:not(:disabled) { background-color: #777; }
+        #autoGenerateButton, #drawButton { background-color: #ff6200; color: #000; padding: 12px 24px; font-size: 18px; }
+        #autoGenerateButton:disabled, #drawButton:disabled { background-color: #cccccc; color: #666; }
+        #autoGenerateButton:hover:not(:disabled), #drawButton:hover:not(:disabled) { background-color: #e55a00; }
+        #seed-phrase-words { margin: 10px 0; font-size: 18px; font-family: "Courier New", Courier, monospace; }
+        #word-display { margin: 10px 0; font-size: 18px; font-family: "Courier New", Courier, monospace; }
+        #word-counter { margin: 10px 0; font-size: 18px; font-family: Arial, sans-serif; }
+        #secure-seed-box { display: none; margin-top: 20px; }
+        #seed-textarea { width: 80%; height: 100px; margin-top: 10px; font-size: 16px; padding: 10px; border-radius: 5px; font-family: "Courier New", Courier, monospace; }
+        #shuffleOverlay { 
+            display: none; 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 300px; 
+            height: 150px; 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(200, 200, 200, 0.7)); 
+            border: 2px solid #666; 
+            border-radius: 15px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+            z-index: 1000; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+        }
+        body.dark #shuffleOverlay { 
+            background: linear-gradient(135deg, rgba(50, 50, 50, 0.9), rgba(20, 20, 20, 0.7)); 
+            border: 2px solid #999; 
+        }
+        .shuffle-text { 
+            color: #333; 
+            font-size: 24px; 
+            font-weight: bold; 
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+            padding: 10px; 
+        }
+        body.dark .shuffle-text { 
+            color: #e0e0e0; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+        }
+        .toggle-container { margin: 10px 0; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .switch { position: relative; display: inline-block; width: 60px; height: 34px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 34px; }
+        .slider:before { position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: #2196F3; }
+        input:checked + .slider:before { transform: translateX(26px); }
+        #entropy-score { margin-top: 10px; font-size: 18px; color: #4CAF50; }
+        footer { width: 100%; padding: 10px 0; text-align: center; font-size: 14px; }
+        footer a { margin: 0 15px; text-decoration: none; color: inherit; transition: color 0.3s; }
+        footer a:hover { color: #ff6200; }
+        body.light footer a { color: #333; }
+        body.dark footer a { color: #e0e0e0; }
+        #checksumButton { background-color: #FFA500; color: #333; }
+        #checksumButton:hover:not(:disabled) { background-color: #FF8C00; }
+        #checksumResult { margin-top: 10px; font-size: 18px; color: #FFA500; }
+        #wipeSeedButton { background-color: #FF4136; color: #fff; }
+        #wipeSeedButton:hover:not(:disabled) { background-color: #D32F2F; }
+    </style>
+</head>
+<body class="dark">
+    <div id="container">
+        <h1>Entropy Seed Phrase Poker</h1>
+        <div class="card-container">
+            <div id="blue-card" class="card"><span class="suit-top-left"></span><span class="card-rank">?</span><span class="suit-bottom-right"></span></div>
+            <div id="orange-card" class="card"><span class="suit-top-left"></span><span class="card-rank">?</span><span class="suit-bottom-right"></span></div>
+        </div>
+        <div id="word-display">Word: -</div>
+        <div id="word-counter">Words: 0 / 11</div>
+        <div id="seed-phrase"><div id="seed-phrase-words"></div></div>
+        <div id="secure-seed-box" style="display: none;">
+            <h2>Secure Seed Phrase</h2>
+            <textarea id="seed-textarea" readonly></textarea><br>
+            <button id="copyButton">Copy to Clipboard</button>
+            <button id="checksumButton">Calculate Checksum</button>
+            <button id="wipeSeedButton">Wipe Seed Data</button>
+            <div id="entropy-score"></div>
+            <div id="checksumResult"></div>
+        </div>
+        <button id="startButton">Start</button>
+        <button id="drawButton" disabled>Draw Pair</button>
+        <button id="autoGenerateButton" disabled>Auto Generate</button>
+        <button id="resetButton" disabled>Reset</button>
+        <div class="toggle-container">
+            <label>11-word</label>
+            <label class="switch"><input type="checkbox" id="toggle-switch"><span class="slider"></span></label>
+            <label>23-word</label>
+        </div>
+        <button id="themeToggle">Light Mode</button>
+    </div>
+    <div id="shuffleOverlay" style="display: none;"><div class="shuffle-text">Loading Entropy: 0%</div></div>
+    <footer>
+        <a href="https://www.allesvoorbitcoin.be" target="_blank">Home</a>
+        <a href="https://coinos.io/pay/allesvoorbitcoin" target="_blank">Donate</a>
+        <a href="https://github.com/avbpodcast/" target="_blank">GitHub</a>
+        <a href="https://allesvoorbitcoin.be/contact/" target="_blank">Contact</a>
+        <span>v. 2.0.0</span>
+    </footer>
+
+    <script>
+        console.log("Script started loading");
+
+        class LavaRand {
+            constructor(numRounds = 173) {
+                this.numRounds = numRounds;
+                this.randomnessBuffer = [];
+                this.index = 0;
+                this.isFallback = false;
+            }
+
+            async fetchRandomness(updateProgressCallback) {
+                try {
+                    const latestResponse = await fetch('https://drand.cloudflare.com/public/latest', { cache: 'no-store' });
+                    if (!latestResponse.ok) throw new Error('Failed to fetch latest round');
+                    const latestData = await latestResponse.json();
+                    const latestRound = latestData.round;
+
+                    for (let i = 0; i < this.numRounds; i++) {
+                        const round = latestRound - i;
+                        if (round < 1) break;
+                        const response = await fetch(`https://drand.cloudflare.com/public/${round}`, { cache: 'no-store' });
+                        if (!response.ok) throw new Error(`Failed to fetch round ${round}`);
+                        const data = await response.json();
+                        const randomness = data.randomness;
+                        for (let j = 0; j < 64; j += 2) {
+                            const byte = parseInt(randomness.substr(j, 2), 16);
+                            this.randomnessBuffer.push(byte);
+                        }
+                        const progress = Math.round(((i + 1) / this.numRounds) * 100);
+                        if (updateProgressCallback) updateProgressCallback(progress);
+                    }
+                    console.log(`Fetched ${this.randomnessBuffer.length} bytes from LavaRand`);
+                } catch (error) {
+                    console.warn('LavaRand fetch failed, switching to fallback:', error);
+                    this.isFallback = true;
+                    await this.fetchFallbackRandomness(updateProgressCallback);
+                }
+            }
+
+            async fetchFallbackRandomness(updateProgressCallback) {
+                const bytesNeeded = this.numRounds * 32;
+                const buffer = new Uint8Array(bytesNeeded);
+                crypto.getRandomValues(buffer);
+                this.randomnessBuffer = Array.from(buffer);
+                console.log(`Fallback: Generated ${this.randomnessBuffer.length} bytes using crypto.getRandomValues`);
+
+                for (let i = 0; i <= 100; i += 10) {
+                    if (updateProgressCallback) updateProgressCallback(i);
+                    await new Promise(resolve => setTimeout(resolve, 50));
+                }
+            }
+
+            getRandomInt(max) {
+                if (this.index >= this.randomnessBuffer.length) {
+                    if (this.isFallback) {
+                        const buffer = new Uint8Array(1024);
+                        crypto.getRandomValues(buffer);
+                        this.randomnessBuffer = Array.from(buffer);
+                        this.index = 0;
+                        console.log("Fallback buffer refilled");
+                    } else {
+                        console.error('LavaRand buffer unexpectedly depleted');
+                        throw new Error('Insufficient entropy for shuffling');
+                    }
+                }
+
+                const maxSafe = Math.floor(256 / max) * max;
+                let byte;
+                do {
+                    byte = this.randomnessBuffer[this.index++];
+                    if (this.index >= this.randomnessBuffer.length && this.isFallback) {
+                        const buffer = new Uint8Array(1024);
+                        crypto.getRandomValues(buffer);
+                        this.randomnessBuffer = Array.from(buffer);
+                        this.index = 0;
+                    }
+                } while (byte >= maxSafe);
+                return byte % max;
+            }
+
+            wipeEntropy() {
+                const tempBuffer = new Uint8Array(this.randomnessBuffer.length);
+                crypto.getRandomValues(tempBuffer);
+                this.randomnessBuffer = [];
+                this.index = 0;
+                this.isFallback = false;
+                console.log("LavaRand entropy wiped from memory");
+            }
+        }
+
+        // Truncated BIP-39 wordlist (first 10 words only for brevity)
+        const bip39Words = ["abandon", "ability", "able", "about", "above", "absent", "absorb", "abstract", "absurd", "abuse", "access", "accident", "account", "accuse", "achieve", "acid", "acoustic", "acquire", "across", "act", "action", "actor", "actress", "actual", "adapt", "add", "addict", "address", "adjust", "admit", "adult", "advance", "advice", "aerobic", "affair", "afford", "afraid", "again", "age", "agent", "agree", "ahead", "aim", "air", "airport", "aisle", "alarm", "album", "alcohol", "alert", "alien", "all", "alley", "allow", "almost", "alone", "alpha", "already", "also", "alter", "always", "amateur", "amazing", "among", "amount", "amused", "analyst", "anchor", "ancient", "anger", "angle", "angry", "animal", "ankle", "announce", "annual", "another", "answer", "antenna", "antique", "anxiety", "any", "apart", "apology", "appear", "apple", "approve", "april", "arch", "arctic", "area", "arena", "argue", "arm", "armed", "armor", "army", "around", "arrange", "arrest", "arrive", "arrow", "art", "artefact", "artist", "artwork", "ask", "aspect", "assault", "asset", "assist", "assume", "asthma", "athlete", "atom", "attack", "attend", "attitude", "attract", "auction", "audit", "august", "aunt", "author", "auto", "autumn", "average", "avocado", "avoid", "awake", "aware", "away", "awesome", "awful", "awkward", "axis", "baby", "bachelor", "bacon", "badge", "bag", "balance", "balcony", "ball", "bamboo", "banana", "banner", "bar", "barely", "bargain", "barrel", "base", "basic", "basket", "battle", "beach", "bean", "beauty", "because", "become", "beef", "before", "begin", "behave", "behind", "believe", "below", "belt", "bench", "benefit", "best", "betray", "better", "between", "beyond", "bicycle", "bid", "bike", "bind", "biology", "bird", "birth", "bitter", "black", "blade", "blame", "blanket", "blast", "bleak", "bless", "blind", "blood", "blossom", "blouse", "blue", "blur", "blush", "board", "boat", "body", "boil", "bomb", "bone", "bonus", "book", "boost", "border", "boring", "borrow", "boss", "bottom", "bounce", "box", "boy", "bracket", "brain", "brand", "brass", "brave", "bread", "breeze", "brick", "bridge", "brief", "bright", "bring", "brisk", "broccoli", "broken", "bronze", "broom", "brother", "brown", "brush", "bubble", "buddy", "budget", "buffalo", "build", "bulb", "bulk", "bullet", "bundle", "bunker", "burden", "burger", "burst", "bus", "business", "busy", "butter", "buyer", "buzz", "cabbage", "cabin", "cable", "cactus", "cage", "cake", "call", "calm", "camera", "camp", "can", "canal", "cancel", "candy", "cannon", "canoe", "canvas", "canyon", "capable", "capital", "captain", "car", "carbon", "card", "cargo", "carpet", "carry", "cart", "case", "cash", "casino", "castle", "casual", "cat", "catalog", "catch", "category", "cattle", "caught", "cause", "caution", "cave", "ceiling", "celery", "cement", "census", "century", "cereal", "certain", "chair", "chalk", "champion", "change", "chaos", "chapter", "charge", "chase", "chat", "cheap", "check", "cheese", "chef", "cherry", "chest", "chicken", "chief", "child", "chimney", "choice", "choose", "chronic", "chuckle", "chunk", "churn", "cigar", "cinnamon", "circle", "citizen", "city", "civil", "claim", "clap", "clarify", "claw", "clay", "clean", "clerk", "clever", "click", "client", "cliff", "climb", "clinic", "clip", "clock", "clog", "close", "cloth", "cloud", "clown", "club", "clump", "cluster", "clutch", "coach", "coast", "coconut", "code", "coffee", "coil", "coin", "collect", "color", "column", "combine", "come", "comfort", "comic", "common", "company", "concert", "conduct", "confirm", "congress", "connect", "consider", "control", "convince", "cook", "cool", "copper", "copy", "coral", "core", "corn", "correct", "cost", "cotton", "couch", "country", "couple", "course", "cousin", "cover", "coyote", "crack", "cradle", "craft", "cram", "crane", "crash", "crater", "crawl", "crazy", "cream", "credit", "creek", "crew", "cricket", "crime", "crisp", "critic", "crop", "cross", "crouch", "crowd", "crucial", "cruel", "cruise", "crumble", "crunch", "crush", "cry", "crystal", "cube", "culture", "cup", "cupboard", "curious", "current", "curtain", "curve", "cushion", "custom", "cute", "cycle", "dad", "damage", "damp", "dance", "danger", "daring", "dash", "daughter", "dawn", "day", "deal", "debate", "debris", "decade", "december", "decide", "decline", "decorate", "decrease", "deer", "defense", "define", "defy", "degree", "delay", "deliver", "demand", "demise", "denial", "dentist", "deny", "depart", "depend", "deposit", "depth", "deputy", "derive", "describe", "desert", "design", "desk", "despair", "destroy", "detail", "detect", "develop", "device", "devote", "diagram", "dial", "diamond", "diary", "dice", "diesel", "diet", "differ", "digital", "dignity", "dilemma", "dinner", "dinosaur", "direct", "dirt", "disagree", "discover", "disease", "dish", "dismiss", "disorder", "display", "distance", "divert", "divide", "divorce", "dizzy", "doctor", "document", "dog", "doll", "dolphin", "domain", "donate", "donkey", "donor", "door", "dose", "double", "dove", "draft", "dragon", "drama", "drastic", "draw", "dream", "dress", "drift", "drill", "drink", "drip", "drive", "drop", "drum", "dry", "duck", "dumb", "dune", "during", "dust", "dutch", "duty", "dwarf", "dynamic", "eager", "eagle", "early", "earn", "earth", "easily", "east", "easy", "echo", "ecology", "economy", "edge", "edit", "educate", "effort", "egg", "eight", "either", "elbow", "elder", "electric", "elegant", "element", "elephant", "elevator", "elite", "else", "embark", "embody", "embrace", "emerge", "emotion", "employ", "empower", "empty", "enable", "enact", "end", "endless", "endorse", "enemy", "energy", "enforce", "engage", "engine", "enhance", "enjoy", "enlist", "enough", "enrich", "enroll", "ensure", "enter", "entire", "entry", "envelope", "episode", "equal", "equip", "era", "erase", "erode", "erosion", "error", "erupt", "escape", "essay", "essence", "estate", "eternal", "ethics", "evidence", "evil", "evoke", "evolve", "exact", "example", "excess", "exchange", "excite", "exclude", "excuse", "execute", "exercise", "exhaust", "exhibit", "exile", "exist", "exit", "exotic", "expand", "expect", "expire", "explain", "expose", "express", "extend", "extra", "eye", "eyebrow", "fabric", "face", "faculty", "fade", "faint", "faith", "fall", "false", "fame", "family", "famous", "fan", "fancy", "fantasy", "farm", "fashion", "fat", "fatal", "father", "fatigue", "fault", "favorite", "feature", "february", "federal", "fee", "feed", "feel", "female", "fence", "festival", "fetch", "fever", "few", "fiber", "fiction", "field", "figure", "file", "film", "filter", "final", "find", "fine", "finger", "finish", "fire", "firm", "first", "fiscal", "fish", "fit", "fitness", "fix", "flag", "flame", "flash", "flat", "flavor", "flee", "flight", "flip", "float", "flock", "floor", "flower", "fluid", "flush", "fly", "foam", "focus", "fog", "foil", "fold", "follow", "food", "foot", "force", "forest", "forget", "fork", "fortune", "forum", "forward", "fossil", "foster", "found", "fox", "fragile", "frame", "frequent", "fresh", "friend", "fringe", "frog", "front", "frost", "frown", "frozen", "fruit", "fuel", "fun", "funny", "furnace", "fury", "future", "gadget", "gain", "galaxy", "gallery", "game", "gap", "garage", "garbage", "garden", "garlic", "garment", "gas", "gasp", "gate", "gather", "gauge", "gaze", "general", "genius", "genre", "gentle", "genuine", "gesture", "ghost", "giant", "gift", "giggle", "ginger", "giraffe", "girl", "give", "glad", "glance", "glare", "glass", "glide", "glimpse", "globe", "gloom", "glory", "glove", "glow", "glue", "goat", "goddess", "gold", "good", "goose", "gorilla", "gospel", "gossip", "govern", "gown", "grab", "grace", "grain", "grant", "grape", "grass", "gravity", "great", "green", "grid", "grief", "grit", "grocery", "group", "grow", "grunt", "guard", "guess", "guide", "guilt", "guitar", "gun", "gym", "habit", "hair", "half", "hammer", "hamster", "hand", "happy", "harbor", "hard", "harsh", "harvest", "hat", "have", "hawk", "hazard", "head", "health", "heart", "heavy", "hedgehog", "height", "hello", "helmet", "help", "hen", "hero", "hidden", "high", "hill", "hint", "hip", "hire", "history", "hobby", "hockey", "hold", "hole", "holiday", "hollow", "home", "honey", "hood", "hope", "horn", "horror", "horse", "hospital", "host", "hotel", "hour", "hover", "hub", "huge", "human", "humble", "humor", "hundred", "hungry", "hunt", "hurdle", "hurry", "hurt", "husband", "hybrid", "ice", "icon", "idea", "identify", "idle", "ignore", "ill", "illegal", "illness", "image", "imitate", "immense", "immune", "impact", "impose", "improve", "impulse", "inch", "include", "income", "increase", "index", "indicate", "indoor", "industry", "infant", "inflict", "inform", "inhale", "inherit", "initial", "inject", "injury", "inmate", "inner", "innocent", "input", "inquiry", "insane", "insect", "inside", "inspire", "install", "intact", "interest", "into", "invest", "invite", "involve", "iron", "island", "isolate", "issue", "item", "ivory", "jacket", "jaguar", "jar", "jazz", "jealous", "jeans", "jelly", "jewel", "job", "join", "joke", "journey", "joy", "judge", "juice", "jump", "jungle", "junior", "junk", "just", "kangaroo", "keen", "keep", "ketchup", "key", "kick", "kid", "kidney", "kind", "kingdom", "kiss", "kit", "kitchen", "kite", "kitten", "kiwi", "knee", "knife", "knock", "know", "lab", "label", "labor", "ladder", "lady", "lake", "lamp", "language", "laptop", "large", "later", "latin", "laugh", "laundry", "lava", "law", "lawn", "lawsuit", "layer", "lazy", "leader", "leaf", "learn", "leave", "lecture", "left", "leg", "legal", "legend", "leisure", "lemon", "lend", "length", "lens", "leopard", "lesson", "letter", "level", "liar", "liberty", "library", "license", "life", "lift", "light", "like", "limb", "limit", "link", "lion", "liquid", "list", "little", "live", "lizard", "load", "loan", "lobster", "local", "lock", "logic", "lonely", "long", "loop", "lottery", "loud", "lounge", "love", "loyal", "lucky", "luggage", "lumber", "lunar", "lunch", "luxury", "lyrics", "machine", "mad", "magic", "magnet", "maid", "mail", "main", "major", "make", "mammal", "man", "manage", "mandate", "mango", "mansion", "manual", "maple", "marble", "march", "margin", "marine", "market", "marriage", "mask", "mass", "master", "match", "material", "math", "matrix", "matter", "maximum", "maze", "meadow", "mean", "measure", "meat", "mechanic", "medal", "media", "melody", "melt", "member", "memory", "mention", "menu", "mercy", "merge", "merit", "merry", "mesh", "message", "metal", "method", "middle", "midnight", "milk", "million", "mimic", "mind", "minimum", "minor", "minute", "miracle", "mirror", "misery", "miss", "mistake", "mix", "mixed", "mixture", "mobile", "model", "modify", "mom", "moment", "monitor", "monkey", "monster", "month", "moon", "moral", "more", "morning", "mosquito", "mother", "motion", "motor", "mountain", "mouse", "move", "movie", "much", "muffin", "mule", "multiply", "muscle", "museum", "mushroom", "music", "must", "mutual", "myself", "mystery", "myth", "naive", "name", "napkin", "narrow", "nasty", "nation", "nature", "near", "neck", "need", "negative", "neglect", "neither", "nephew", "nerve", "nest", "net", "network", "neutral", "never", "news", "next", "nice", "night", "noble", "noise", "nominee", "noodle", "normal", "north", "nose", "notable", "note", "nothing", "notice", "novel", "now", "nuclear", "number", "nurse", "nut", "oak", "obey", "object", "oblige", "obscure", "observe", "obtain", "obvious", "occur", "ocean", "october", "odor", "off", "offer", "office", "often", "oil", "okay", "old", "olive", "olympic", "omit", "once", "one", "onion", "online", "only", "open", "opera", "opinion", "oppose", "option", "orange", "orbit", "orchard", "order", "ordinary", "organ", "orient", "original", "orphan", "ostrich", "other", "outdoor", "outer", "output", "outside", "oval", "oven", "over", "own", "owner", "oxygen", "oyster", "ozone", "pact", "paddle", "page", "pair", "palace", "palm", "panda", "panel", "panic", "panther", "paper", "parade", "parent", "park", "parrot", "party", "pass", "patch", "path", "patient", "patrol", "pattern", "pause", "pave", "payment", "peace", "peanut", "pear", "peasant", "pelican", "pen", "penalty", "pencil", "people", "pepper", "perfect", "permit", "person", "pet", "phone", "photo", "phrase", "physical", "piano", "picnic", "picture", "piece", "pig", "pigeon", "pill", "pilot", "pink", "pioneer", "pipe", "pistol", "pitch", "pizza", "place", "planet", "plastic", "plate", "play", "please", "pledge", "pluck", "plug", "plunge", "poem", "poet", "point", "polar", "pole", "police", "pond", "pony", "pool", "popular", "portion", "position", "possible", "post", "potato", "pottery", "poverty", "powder", "power", "practice", "praise", "predict", "prefer", "prepare", "present", "pretty", "prevent", "price", "pride", "primary", "print", "priority", "prison", "private", "prize", "problem", "process", "produce", "profit", "program", "project", "promote", "proof", "property", "prosper", "protect", "proud", "provide", "public", "pudding", "pull", "pulp", "pulse", "pumpkin", "punch", "pupil", "puppy", "purchase", "purity", "purpose", "purse", "push", "put", "puzzle", "pyramid", "quality", "quantum", "quarter", "question", "quick", "quit", "quiz", "quote", "rabbit", "raccoon", "race", "rack", "radar", "radio", "rail", "rain", "raise", "rally", "ramp", "ranch", "random", "range", "rapid", "rare", "rate", "rather", "raven", "raw", "razor", "ready", "real", "reason", "rebel", "rebuild", "recall", "receive", "recipe", "record", "recycle", "reduce", "reflect", "reform", "refuse", "region", "regret", "regular", "reject", "relax", "release", "relief", "rely", "remain", "remember", "remind", "remove", "render", "renew", "rent", "reopen", "repair", "repeat", "replace", "report", "require", "rescue", "resemble", "resist", "resource", "response", "result", "retire", "retreat", "return", "reunion", "reveal", "review", "reward", "rhythm", "rib", "ribbon", "rice", "rich", "ride", "ridge", "rifle", "right", "rigid", "ring", "riot", "ripple", "risk", "ritual", "rival", "river", "road", "roast", "robot", "robust", "rocket", "romance", "roof", "rookie", "room", "rose", "rotate", "rough", "round", "route", "royal", "rubber", "rude", "rug", "rule", "run", "runway", "rural", "sad", "saddle", "sadness", "safe", "sail", "salad", "salmon", "salon", "salt", "salute", "same", "sample", "sand", "satisfy", "satoshi", "sauce", "sausage", "save", "say", "scale", "scan", "scare", "scatter", "scene", "scheme", "school", "science", "scissors", "scorpion", "scout", "scrap", "screen", "script", "scrub", "sea", "search", "season", "seat", "second", "secret", "section", "security", "seed", "seek", "segment", "select", "sell", "seminar", "senior", "sense", "sentence", "series", "service", "session", "settle", "setup", "seven", "shadow", "shaft", "shallow", "share", "shed", "shell", "sheriff", "shield", "shift", "shine", "ship", "shiver", "shock", "shoe", "shoot", "shop", "short", "shoulder", "shove", "shrimp", "shrug", "shuffle", "shy", "sibling", "sick", "side", "siege", "sight", "sign", "silent", "silk", "silly", "silver", "similar", "simple", "since", "sing", "siren", "sister", "situate", "six", "size", "skate", "sketch", "ski", "skill", "skin", "skirt", "skull", "slab", "slam", "sleep", "slender", "slice", "slide", "slight", "slim", "slogan", "slot", "slow", "slush", "small", "smart", "smile", "smoke", "smooth", "snack", "snake", "snap", "sniff", "snow", "soap", "soccer", "social", "sock", "soda", "soft", "solar", "soldier", "solid", "solution", "solve", "someone", "song", "soon", "sorry", "sort", "soul", "sound", "soup", "source", "south", "space", "spare", "spatial", "spawn", "speak", "special", "speed", "spell", "spend", "sphere", "spice", "spider", "spike", "spin", "spirit", "split", "spoil", "sponsor", "spoon", "sport", "spot", "spray", "spread", "spring", "spy", "square", "squeeze", "squirrel", "stable", "stadium", "staff", "stage", "stairs", "stamp", "stand", "start", "state", "stay", "steak", "steel", "stem", "step", "stereo", "stick", "still", "sting", "stock", "stomach", "stone", "stool", "story", "stove", "strategy", "street", "strike", "strong", "struggle", "student", "stuff", "stumble", "style", "subject", "submit", "subway", "success", "such", "sudden", "suffer", "sugar", "suggest", "suit", "summer", "sun", "sunny", "sunset", "super", "supply", "supreme", "sure", "surface", "surge", "surprise", "surround", "survey", "suspect", "sustain", "swallow", "swamp", "swap", "swarm", "swear", "sweet", "swift", "swim", "swing", "switch", "sword", "symbol", "symptom", "syrup", "system", "table", "tackle", "tag", "tail", "talent", "talk", "tank", "tape", "target", "task", "taste", "tattoo", "taxi", "teach", "team", "tell", "ten", "tenant", "tennis", "tent", "term", "test", "text", "thank", "that", "theme", "then", "theory", "there", "they", "thing", "this", "thought", "three", "thrive", "throw", "thumb", "thunder", "ticket", "tide", "tiger", "tilt", "timber", "time", "tiny", "tip", "tired", "tissue", "title", "toast", "tobacco", "today", "toddler", "toe", "together", "toilet", "token", "tomato", "tomorrow", "tone", "tongue", "tonight", "tool", "tooth", "top", "topic", "topple", "torch", "tornado", "tortoise", "toss", "total", "tourist", "toward", "tower", "town", "toy", "track", "trade", "traffic", "tragic", "train", "transfer", "trap", "trash", "travel", "tray", "treat", "tree", "trend", "trial", "tribe", "trick", "trigger", "trim", "trip", "trophy", "trouble", "truck", "true", "truly", "trumpet", "trust", "truth", "try", "tube", "tuition", "tumble", "tuna", "tunnel", "turkey", "turn", "turtle", "twelve", "twenty", "twice", "twin", "twist", "two", "type", "typical", "ugly", "umbrella", "unable", "unaware", "uncle", "uncover", "under", "undo", "unfair", "unfold", "unhappy", "uniform", "unique", "unit", "universe", "unknown", "unlock", "until", "unusual", "unveil", "update", "upgrade", "uphold", "upon", "upper", "upset", "urban", "urge", "usage", "use", "used", "useful", "useless", "usual", "utility", "vacant", "vacuum", "vague", "valid", "valley", "valve", "van", "vanish", "vapor", "various", "vast", "vault", "vehicle", "velvet", "vendor", "venture", "venue", "verb", "verify", "version", "very", "vessel", "veteran", "viable", "vibrant", "vicious", "victory", "video", "view", "village", "vintage", "violin", "virtual", "virus", "visa", "visit", "visual", "vital", "vivid", "vocal", "voice", "void", "volcano", "volume", "vote", "voyage", "wage", "wagon", "wait", "walk", "wall", "walnut", "want", "warfare", "warm", "warrior", "wash", "wasp", "waste", "water", "wave", "way", "wealth", "weapon", "wear", "weasel", "weather", "web", "wedding", "weekend", "weird", "welcome", "west", "wet", "whale", "what", "wheat", "wheel", "when", "where", "whip", "whisper", "wide", "width", "wife", "wild", "will", "win", "window", "wine", "wing", "wink", "winner", "winter", "wire", "wisdom", "wise", "wish", "witness", "wolf", "woman", "wonder", "wood", "wool", "word", "work", "world", "worry", "worth", "wrap", "wreck", "wrestle", "wrist", "write", "wrong", "yard", "year", "yellow", "you", "young", "youth", "zebra", "zero", "zone", "zoo" ]; 
+ 
+        const wordIndices = {};
+        bip39Words.forEach((word, index) => wordIndices[word] = index);
+
+        const suits = ["♥", "♦", "♣", "♠"];
+        const rankNames = { 1: "A", 11: "J", 12: "Q", 13: "K" };
+
+        let blueDeck = [];
+        let orangeDeck = [];
+        let instances = [];
+        let currentInstance = 0;
+        let drawCount = 0;
+        let maxDraws = 11;
+        let seedPhrase = new Uint32Array(maxDraws);
+        let isInitialized = false;
+        let isShuffling = false;
+        let isAutoGenerating = false;
+        let lavaRand = null;
+
+        function shuffle(array, rng) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = rng.getRandomInt(i + 1);
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function preShuffleNextInstance() {
+            if (drawCount < maxDraws - 1) {
+                const nextInstIndex = (currentInstance + 1) % 2;
+                const nextInst = instances[nextInstIndex];
+                setTimeout(() => {
+                    shuffle(nextInst.blue, lavaRand);
+                    shuffle(nextInst.orange, lavaRand);
+                    console.log(`Pre-shuffled instance ${nextInstIndex} with LavaRand`);
+                }, 0);
+            }
+        }
+
+        function updateCounter() {
+            document.getElementById("word-counter").textContent = `Words: ${drawCount} / ${maxDraws}`;
+        }
+
+        function calculateEntropy() {
+            const wordCount = drawCount;
+            const totalWords = bip39Words.length;
+            const entropyBits = wordCount * Math.log2(totalWords);
+            return `Entropy: ${Math.round(entropyBits)} bits`;
+        }
+
+        function switchToSecureBox() {
+            const seedPhraseDiv = document.getElementById("seed-phrase");
+            const secureBox = document.getElementById("secure-seed-box");
+            const seedTextarea = document.getElementById("seed-textarea");
+            const entropyScore = document.getElementById("entropy-score");
+
+            seedPhraseDiv.style.display = "none";
+            secureBox.style.display = "block";
+            seedTextarea.value = Array.from(seedPhrase.slice(0, drawCount)).map(i => bip39Words[i]).join(" ");
+            entropyScore.textContent = calculateEntropy();
+            document.getElementById("drawButton").disabled = true;
+            document.getElementById("autoGenerateButton").disabled = true;
+            document.getElementById("startButton").disabled = false;
+            lavaRand.wipeEntropy();
+            updateResetButtonState();
+        }
+
+        function updateResetButtonState() {
+            document.getElementById("resetButton").disabled = !isInitialized;
+        }
+
+        function updateAutoGenerateButtonState() {
+            document.getElementById("autoGenerateButton").disabled = !isInitialized || drawCount >= maxDraws || isShuffling || isAutoGenerating;
+        }
+
+        function wipeSeedData() {
+            const tempIndices = new Uint8Array(seedPhrase.length);
+            crypto.getRandomValues(tempIndices);
+            seedPhrase.fill(0);
+            seedPhrase = new Uint32Array(maxDraws);
+            document.getElementById("seed-textarea").value = "Seed data wiped";
+            document.getElementById("seed-phrase-words").textContent = "";
+            document.getElementById("checksumResult").textContent = "";
+            console.log("Seed phrase wiped from memory");
+        }
+
+        function resetGame() {
+            blueDeck = [];
+            orangeDeck = [];
+            instances = [];
+            currentInstance = 0;
+            drawCount = 0;
+            seedPhrase.fill(0);
+            seedPhrase = new Uint32Array(maxDraws);
+            isInitialized = false;
+            isAutoGenerating = false;
+            if (lavaRand) lavaRand.wipeEntropy();
+            lavaRand = null;
+
+            const blueCardEl = document.getElementById("blue-card");
+            const orangeCardEl = document.getElementById("orange-card");
+            blueCardEl.innerHTML = '<span class="suit-top-left"></span><span class="card-rank">?</span><span class="suit-bottom-right"></span>';
+            orangeCardEl.innerHTML = '<span class="suit-top-left"></span><span class="card-rank">?</span><span class="suit-bottom-right"></span>';
+            document.getElementById("word-display").textContent = "Word: -";
+            document.getElementById("seed-phrase-words").textContent = "";
+            document.getElementById("secure-seed-box").style.display = "none";
+            document.getElementById("startButton").disabled = false;
+            document.getElementById("drawButton").disabled = true;
+            document.getElementById("autoGenerateButton").disabled = true;
+            document.getElementById("resetButton").disabled = true;
+            document.getElementById("checksumResult").textContent = "";
+            updateCounter();
+            updateResetButtonState();
+            updateAutoGenerateButtonState();
+        }
+
+        async function startGame() {
+            if (isInitialized) return;
+
+            const overlay = document.getElementById("shuffleOverlay");
+            const shuffleText = overlay.querySelector(".shuffle-text");
+            shuffleText.textContent = "Loading Entropy: 0%";
+            overlay.style.display = "flex";
+            isShuffling = true;
+
+            blueDeck = [];
+            for (let suit of suits) {
+                for (let rank = 1; rank <= 8; rank++) {
+                    const displayRank = rankNames[rank] || rank;
+                    blueDeck.push(`${displayRank}${suit}`);
+                }
+            }
+
+            orangeDeck = [];
+            for (let suit of suits) {
+                for (let rank = 1; rank <= 13; rank++) {
+                    const displayRank = rankNames[rank] || rank;
+                    orangeDeck.push(`${displayRank}${suit}`);
+                }
+            }
+            for (let suit of suits) {
+                orangeDeck.push(`J${suit}X`);
+                orangeDeck.push(`Q${suit}X`);
+                orangeDeck.push(`K${suit}X`);
+            }
+
+            try {
+                lavaRand = new LavaRand();
+                await lavaRand.fetchRandomness((progress) => {
+                    shuffleText.textContent = `Loading Entropy: ${progress}%`;
+                });
+            } catch (error) {
+                console.error("Failed to initialize LavaRand:", error);
+                shuffleText.textContent = "Error: Failed to fetch entropy";
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                    isShuffling = false;
+                }, 2000);
+                return;
+            }
+
+            shuffleText.textContent = lavaRand.isFallback ? "Shuffling (Fallback)..." : "Shuffling (LavaRand)...";
+            instances = [
+                { blue: shuffle([...blueDeck], lavaRand), orange: shuffle([...orangeDeck], lavaRand) },
+                { blue: shuffle([...blueDeck], lavaRand), orange: shuffle([...orangeDeck], lavaRand) }
+            ];
+
+            setTimeout(() => {
+                overlay.style.display = "none";
+                document.getElementById("startButton").disabled = true;
+                document.getElementById("drawButton").disabled = false;
+                document.getElementById("autoGenerateButton").disabled = false;
+                document.getElementById("resetButton").disabled = false;
+                isInitialized = true;
+                isShuffling = false;
+                updateCounter();
+                updateResetButtonState();
+                updateAutoGenerateButtonState();
+            }, 1000);
+        }
+
+        async function drawPair() {
+            if (!isInitialized || drawCount >= maxDraws) {
+                if (drawCount >= maxDraws) switchToSecureBox();
+                return;
+            }
+
+            const overlay = document.getElementById("shuffleOverlay");
+            overlay.querySelector(".shuffle-text").textContent = "Shuffling Cards...";
+            overlay.style.display = "flex";
+            isShuffling = true;
+            document.getElementById("startButton").disabled = true;
+
+            preShuffleNextInstance();
+
+            setTimeout(() => {
+                overlay.style.display = "none";
+                isShuffling = false;
+
+                const inst = instances[currentInstance];
+                const blueCard = inst.blue[0];
+                const orangeCard = inst.orange[0];
+
+                const blueCardEl = document.getElementById("blue-card");
+                const orangeCardEl = document.getElementById("orange-card");
+                const blueSuit = blueCard.slice(-1);
+                const blueValue = blueCard.slice(0, -1);
+                const orangeSuit = orangeCard.slice(-1) === "X" ? orangeCard.slice(-2, -1) : orangeCard.slice(-1);
+                const orangeValue = orangeCard.slice(-1) === "X" ? orangeCard.slice(0, -2) : orangeCard.slice(0, -1);
+                const isOrangeXCard = orangeCard.slice(-1) === "X";
+
+                blueCardEl.innerHTML = `<span class="suit-top-left">${blueSuit}</span><span class="card-rank">${blueValue}</span><span class="suit-bottom-right">${blueSuit}</span>`;
+                blueCardEl.className = "card" + (blueSuit === "♥" || blueSuit === "♦" ? " red" : "");
+
+                orangeCardEl.innerHTML = `<span class="suit-top-left">${orangeSuit}</span><span class="card-rank">${orangeValue}</span><span class="suit-bottom-right">${orangeSuit}</span>` + 
+                                        (isOrangeXCard ? '<span class="x-marker">X</span>' : '');
+                orangeCardEl.className = "card" + (orangeSuit === "♥" || orangeSuit === "♦" ? " red" : "");
+
+                const blueIndex = blueDeck.indexOf(blueCard);
+                const orangeIndex = orangeDeck.indexOf(orangeCard);
+                const pairIndex = blueIndex * 64 + orangeIndex;
+                const wordIndex = pairIndex % bip39Words.length;
+
+                seedPhrase[drawCount] = wordIndex;
+                document.getElementById("word-display").textContent = `Word: ${bip39Words[wordIndex]}`;
+                document.getElementById("seed-phrase-words").textContent = Array.from(seedPhrase.slice(0, drawCount + 1)).map(i => bip39Words[i]).join(" ");
+
+                shuffle(inst.blue, lavaRand);
+                shuffle(inst.orange, lavaRand);
+
+                drawCount++;
+                currentInstance = (currentInstance + 1) % 2;
+                updateCounter();
+                updateResetButtonState();
+                updateAutoGenerateButtonState();
+
+                if (drawCount === maxDraws) {
+                    switchToSecureBox();
+                } else if (isAutoGenerating) {
+                    setTimeout(drawPair, 500);
+                }
+            }, 500);
+        }
+
+        function autoGenerate() {
+            if (!isInitialized || drawCount >= maxDraws || isShuffling) return;
+            isAutoGenerating = true;
+            document.getElementById("startButton").disabled = true;
+            drawPair();
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+                body.classList.add("light");
+                document.getElementById("themeToggle").textContent = "Dark Mode";
+            } else {
+                body.classList.remove("light");
+                body.classList.add("dark");
+                document.getElementById("themeToggle").textContent = "Light Mode";
+            }
+        }
+
+        function copySeed() {
+            const seedTextarea = document.getElementById("seed-textarea");
+            seedTextarea.select();
+            document.execCommand("copy");
+            alert("Seed phrase copied to clipboard!");
+        }
+
+        async function calculateChecksum() {
+            const seedTextarea = document.getElementById("seed-textarea");
+            const checksumResult = document.getElementById("checksumResult");
+            const words = seedTextarea.value.trim().split(/\s+/);
+
+            if (words.length !== 11 && words.length !== 23) {
+                checksumResult.textContent = "Error: Seed must be 11 or 23 words";
+                return;
+            }
+
+            for (let word of words) {
+                if (!wordIndices.hasOwnProperty(word) || typeof word !== 'string' || word.length > 20) {
+                    checksumResult.textContent = `Error: Invalid or malformed word: ${word}`;
+                    return;
+                }
+            }
+
+            const indices = words.map(word => wordIndices[word]);
+            const bits = indices.map(index => 
+                index.toString(2).padStart(11, '0')
+            ).join('');
+
+            const entLen = words.length * 11;
+            const csLen = Math.floor((entLen + 11) / 32);
+            const validWords = [];
+
+            for (let i = 0; i < bip39Words.length; i++) {
+                const testBits = bits + i.toString(2).padStart(11, '0');
+                const fullBytes = new Uint8Array((testBits.length + 7) >> 3);
+
+                for (let j = 0; j < fullBytes.length - 1; j++) {
+                    fullBytes[j] = parseInt(testBits.substr(j * 8, 8), 2);
+                }
+
+                try {
+                    const hashBuffer = await crypto.subtle.digest('SHA-256', fullBytes.slice(0, -1));
+                    const hashArray = Array.from(new Uint8Array(hashBuffer));
+                    const checksum = hashArray[0].toString(2).padStart(8, '0').slice(0, csLen);
+
+                    if (testBits.slice(-csLen) === checksum) {
+                        validWords.push(bip39Words[i]);
+                    }
+                } catch (error) {
+                    console.error('Checksum calculation error:', error);
+                    checksumResult.textContent = "Error calculating checksum";
+                    return;
+                }
+            }
+
+            if (validWords.length > 0) {
+                const randomIndex = Math.floor(Math.random() * validWords.length);
+                const selectedWord = validWords[randomIndex];
+                checksumResult.textContent = `Checksum word: ${selectedWord} (one of ${validWords.length} possible)`;
+                seedTextarea.value = `${seedTextarea.value} ${selectedWord}`;
+            } else {
+                checksumResult.textContent = "No valid checksum words found";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") {
+                alert("Warning: This application should be run over HTTPS for security.");
+            }
+
+            document.getElementById("startButton").addEventListener("click", startGame);
+            document.getElementById("drawButton").addEventListener("click", drawPair);
+            document.getElementById("autoGenerateButton").addEventListener("click", autoGenerate);
+            document.getElementById("resetButton").addEventListener("click", resetGame);
+            document.getElementById("toggle-switch").addEventListener("change", () => {
+                const isChecked = document.getElementById("toggle-switch").checked;
+                const newMaxDraws = isChecked ? 23 : 11;
+
+                if (isInitialized && drawCount === maxDraws) {
+                    resetGame();
+                    maxDraws = newMaxDraws;
+                    updateCounter();
+                } else {
+                    maxDraws = newMaxDraws;
+                    seedPhrase = new Uint32Array(maxDraws);
+                    updateCounter();
+                }
+
+                updateResetButtonState();
+                updateAutoGenerateButtonState();
+            });
+            document.getElementById("copyButton").addEventListener("click", copySeed);
+            document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+            document.getElementById("checksumButton").addEventListener("click", calculateChecksum);
+            document.getElementById("wipeSeedButton").addEventListener("click", wipeSeedData);
+            updateCounter();
+            updateResetButtonState();
+            updateAutoGenerateButtonState();
+        });
+
+        console.log("Script finished loading");
+    </script>
+</body>
+</html>
