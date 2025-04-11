@@ -1,0 +1,2048 @@
+   0 / A♥   + A♥    / abandon
+   1 / A♥   + 2♥    / ability
+   2 / A♥   + 3♥    / able
+   3 / A♥   + 4♥    / about
+   4 / A♥   + 5♥    / above
+   5 / A♥   + 6♥    / absent
+   6 / A♥   + 7♥    / absorb
+   7 / A♥   + 8♥    / abstract
+   8 / A♥   + 9♥    / absurd
+   9 / A♥   + 10♥   / abuse
+  10 / A♥   + J♥    / access
+  11 / A♥   + Q♥    / accident
+  12 / A♥   + K♥    / account
+  13 / A♥   + JX♥   / accuse
+  14 / A♥   + QX♥   / achieve
+  15 / A♥   + KX♥   / acid
+  16 / A♥   + A♦    / acoustic
+  17 / A♥   + 2♦    / acquire
+  18 / A♥   + 3♦    / across
+  19 / A♥   + 4♦    / act
+  20 / A♥   + 5♦    / action
+  21 / A♥   + 6♦    / actor
+  22 / A♥   + 7♦    / actress
+  23 / A♥   + 8♦    / actual
+  24 / A♥   + 9♦    / adapt
+  25 / A♥   + 10♦   / add
+  26 / A♥   + J♦    / addict
+  27 / A♥   + Q♦    / address
+  28 / A♥   + K♦    / adjust
+  29 / A♥   + JX♦   / admit
+  30 / A♥   + QX♦   / adult
+  31 / A♥   + KX♦   / advance
+  32 / A♥   + A♣    / advice
+  33 / A♥   + 2♣    / aerobic
+  34 / A♥   + 3♣    / affair
+  35 / A♥   + 4♣    / afford
+  36 / A♥   + 5♣    / afraid
+  37 / A♥   + 6♣    / again
+  38 / A♥   + 7♣    / age
+  39 / A♥   + 8♣    / agent
+  40 / A♥   + 9♣    / agree
+  41 / A♥   + 10♣   / ahead
+  42 / A♥   + J♣    / aim
+  43 / A♥   + Q♣    / air
+  44 / A♥   + K♣    / airport
+  45 / A♥   + JX♣   / aisle
+  46 / A♥   + QX♣   / alarm
+  47 / A♥   + KX♣   / album
+  48 / A♥   + A♠    / alcohol
+  49 / A♥   + 2♠    / alert
+  50 / A♥   + 3♠    / alien
+  51 / A♥   + 4♠    / all
+  52 / A♥   + 5♠    / alley
+  53 / A♥   + 6♠    / allow
+  54 / A♥   + 7♠    / almost
+  55 / A♥   + 8♠    / alone
+  56 / A♥   + 9♠    / alpha
+  57 / A♥   + 10♠   / already
+  58 / A♥   + J♠    / also
+  59 / A♥   + Q♠    / alter
+  60 / A♥   + K♠    / always
+  61 / A♥   + JX♠   / amateur
+  62 / A♥   + QX♠   / amazing
+  63 / A♥   + KX♠   / among
+  64 / 2♥   + A♥    / amount
+  65 / 2♥   + 2♥    / amused
+  66 / 2♥   + 3♥    / analyst
+  67 / 2♥   + 4♥    / anchor
+  68 / 2♥   + 5♥    / ancient
+  69 / 2♥   + 6♥    / anger
+  70 / 2♥   + 7♥    / angle
+  71 / 2♥   + 8♥    / angry
+  72 / 2♥   + 9♥    / animal
+  73 / 2♥   + 10♥   / ankle
+  74 / 2♥   + J♥    / announce
+  75 / 2♥   + Q♥    / annual
+  76 / 2♥   + K♥    / another
+  77 / 2♥   + JX♥   / answer
+  78 / 2♥   + QX♥   / antenna
+  79 / 2♥   + KX♥   / antique
+  80 / 2♥   + A♦    / anxiety
+  81 / 2♥   + 2♦    / any
+  82 / 2♥   + 3♦    / apart
+  83 / 2♥   + 4♦    / apology
+  84 / 2♥   + 5♦    / appear
+  85 / 2♥   + 6♦    / apple
+  86 / 2♥   + 7♦    / approve
+  87 / 2♥   + 8♦    / april
+  88 / 2♥   + 9♦    / arch
+  89 / 2♥   + 10♦   / arctic
+  90 / 2♥   + J♦    / area
+  91 / 2♥   + Q♦    / arena
+  92 / 2♥   + K♦    / argue
+  93 / 2♥   + JX♦   / arm
+  94 / 2♥   + QX♦   / armed
+  95 / 2♥   + KX♦   / armor
+  96 / 2♥   + A♣    / army
+  97 / 2♥   + 2♣    / around
+  98 / 2♥   + 3♣    / arrange
+  99 / 2♥   + 4♣    / arrest
+ 100 / 2♥   + 5♣    / arrive
+ 101 / 2♥   + 6♣    / arrow
+ 102 / 2♥   + 7♣    / art
+ 103 / 2♥   + 8♣    / artefact
+ 104 / 2♥   + 9♣    / artist
+ 105 / 2♥   + 10♣   / artwork
+ 106 / 2♥   + J♣    / ask
+ 107 / 2♥   + Q♣    / aspect
+ 108 / 2♥   + K♣    / assault
+ 109 / 2♥   + JX♣   / asset
+ 110 / 2♥   + QX♣   / assist
+ 111 / 2♥   + KX♣   / assume
+ 112 / 2♥   + A♠    / asthma
+ 113 / 2♥   + 2♠    / athlete
+ 114 / 2♥   + 3♠    / atom
+ 115 / 2♥   + 4♠    / attack
+ 116 / 2♥   + 5♠    / attend
+ 117 / 2♥   + 6♠    / attitude
+ 118 / 2♥   + 7♠    / attract
+ 119 / 2♥   + 8♠    / auction
+ 120 / 2♥   + 9♠    / audit
+ 121 / 2♥   + 10♠   / august
+ 122 / 2♥   + J♠    / aunt
+ 123 / 2♥   + Q♠    / author
+ 124 / 2♥   + K♠    / auto
+ 125 / 2♥   + JX♠   / autumn
+ 126 / 2♥   + QX♠   / average
+ 127 / 2♥   + KX♠   / avocado
+ 128 / 3♥   + A♥    / avoid
+ 129 / 3♥   + 2♥    / awake
+ 130 / 3♥   + 3♥    / aware
+ 131 / 3♥   + 4♥    / away
+ 132 / 3♥   + 5♥    / awesome
+ 133 / 3♥   + 6♥    / awful
+ 134 / 3♥   + 7♥    / awkward
+ 135 / 3♥   + 8♥    / axis
+ 136 / 3♥   + 9♥    / baby
+ 137 / 3♥   + 10♥   / bachelor
+ 138 / 3♥   + J♥    / bacon
+ 139 / 3♥   + Q♥    / badge
+ 140 / 3♥   + K♥    / bag
+ 141 / 3♥   + JX♥   / balance
+ 142 / 3♥   + QX♥   / balcony
+ 143 / 3♥   + KX♥   / ball
+ 144 / 3♥   + A♦    / bamboo
+ 145 / 3♥   + 2♦    / banana
+ 146 / 3♥   + 3♦    / banner
+ 147 / 3♥   + 4♦    / bar
+ 148 / 3♥   + 5♦    / barely
+ 149 / 3♥   + 6♦    / bargain
+ 150 / 3♥   + 7♦    / barrel
+ 151 / 3♥   + 8♦    / base
+ 152 / 3♥   + 9♦    / basic
+ 153 / 3♥   + 10♦   / basket
+ 154 / 3♥   + J♦    / battle
+ 155 / 3♥   + Q♦    / beach
+ 156 / 3♥   + K♦    / bean
+ 157 / 3♥   + JX♦   / beauty
+ 158 / 3♥   + QX♦   / because
+ 159 / 3♥   + KX♦   / become
+ 160 / 3♥   + A♣    / beef
+ 161 / 3♥   + 2♣    / before
+ 162 / 3♥   + 3♣    / begin
+ 163 / 3♥   + 4♣    / behave
+ 164 / 3♥   + 5♣    / behind
+ 165 / 3♥   + 6♣    / believe
+ 166 / 3♥   + 7♣    / below
+ 167 / 3♥   + 8♣    / belt
+ 168 / 3♥   + 9♣    / bench
+ 169 / 3♥   + 10♣   / benefit
+ 170 / 3♥   + J♣    / best
+ 171 / 3♥   + Q♣    / betray
+ 172 / 3♥   + K♣    / better
+ 173 / 3♥   + JX♣   / between
+ 174 / 3♥   + QX♣   / beyond
+ 175 / 3♥   + KX♣   / bicycle
+ 176 / 3♥   + A♠    / bid
+ 177 / 3♥   + 2♠    / bike
+ 178 / 3♥   + 3♠    / bind
+ 179 / 3♥   + 4♠    / biology
+ 180 / 3♥   + 5♠    / bird
+ 181 / 3♥   + 6♠    / birth
+ 182 / 3♥   + 7♠    / bitter
+ 183 / 3♥   + 8♠    / black
+ 184 / 3♥   + 9♠    / blade
+ 185 / 3♥   + 10♠   / blame
+ 186 / 3♥   + J♠    / blanket
+ 187 / 3♥   + Q♠    / blast
+ 188 / 3♥   + K♠    / bleak
+ 189 / 3♥   + JX♠   / bless
+ 190 / 3♥   + QX♠   / blind
+ 191 / 3♥   + KX♠   / blood
+ 192 / 4♥   + A♥    / blossom
+ 193 / 4♥   + 2♥    / blouse
+ 194 / 4♥   + 3♥    / blue
+ 195 / 4♥   + 4♥    / blur
+ 196 / 4♥   + 5♥    / blush
+ 197 / 4♥   + 6♥    / board
+ 198 / 4♥   + 7♥    / boat
+ 199 / 4♥   + 8♥    / body
+ 200 / 4♥   + 9♥    / boil
+ 201 / 4♥   + 10♥   / bomb
+ 202 / 4♥   + J♥    / bone
+ 203 / 4♥   + Q♥    / bonus
+ 204 / 4♥   + K♥    / book
+ 205 / 4♥   + JX♥   / boost
+ 206 / 4♥   + QX♥   / border
+ 207 / 4♥   + KX♥   / boring
+ 208 / 4♥   + A♦    / borrow
+ 209 / 4♥   + 2♦    / boss
+ 210 / 4♥   + 3♦    / bottom
+ 211 / 4♥   + 4♦    / bounce
+ 212 / 4♥   + 5♦    / box
+ 213 / 4♥   + 6♦    / boy
+ 214 / 4♥   + 7♦    / bracket
+ 215 / 4♥   + 8♦    / brain
+ 216 / 4♥   + 9♦    / brand
+ 217 / 4♥   + 10♦   / brass
+ 218 / 4♥   + J♦    / brave
+ 219 / 4♥   + Q♦    / bread
+ 220 / 4♥   + K♦    / breeze
+ 221 / 4♥   + JX♦   / brick
+ 222 / 4♥   + QX♦   / bridge
+ 223 / 4♥   + KX♦   / brief
+ 224 / 4♥   + A♣    / bright
+ 225 / 4♥   + 2♣    / bring
+ 226 / 4♥   + 3♣    / brisk
+ 227 / 4♥   + 4♣    / broccoli
+ 228 / 4♥   + 5♣    / broken
+ 229 / 4♥   + 6♣    / bronze
+ 230 / 4♥   + 7♣    / broom
+ 231 / 4♥   + 8♣    / brother
+ 232 / 4♥   + 9♣    / brown
+ 233 / 4♥   + 10♣   / brush
+ 234 / 4♥   + J♣    / bubble
+ 235 / 4♥   + Q♣    / buddy
+ 236 / 4♥   + K♣    / budget
+ 237 / 4♥   + JX♣   / buffalo
+ 238 / 4♥   + QX♣   / build
+ 239 / 4♥   + KX♣   / bulb
+ 240 / 4♥   + A♠    / bulk
+ 241 / 4♥   + 2♠    / bullet
+ 242 / 4♥   + 3♠    / bundle
+ 243 / 4♥   + 4♠    / bunker
+ 244 / 4♥   + 5♠    / burden
+ 245 / 4♥   + 6♠    / burger
+ 246 / 4♥   + 7♠    / burst
+ 247 / 4♥   + 8♠    / bus
+ 248 / 4♥   + 9♠    / business
+ 249 / 4♥   + 10♠   / busy
+ 250 / 4♥   + J♠    / butter
+ 251 / 4♥   + Q♠    / buyer
+ 252 / 4♥   + K♠    / buzz
+ 253 / 4♥   + JX♠   / cabbage
+ 254 / 4♥   + QX♠   / cabin
+ 255 / 4♥   + KX♠   / cable
+ 256 / 5♥   + A♥    / cactus
+ 257 / 5♥   + 2♥    / cage
+ 258 / 5♥   + 3♥    / cake
+ 259 / 5♥   + 4♥    / call
+ 260 / 5♥   + 5♥    / calm
+ 261 / 5♥   + 6♥    / camera
+ 262 / 5♥   + 7♥    / camp
+ 263 / 5♥   + 8♥    / can
+ 264 / 5♥   + 9♥    / canal
+ 265 / 5♥   + 10♥   / cancel
+ 266 / 5♥   + J♥    / candy
+ 267 / 5♥   + Q♥    / cannon
+ 268 / 5♥   + K♥    / canoe
+ 269 / 5♥   + JX♥   / canvas
+ 270 / 5♥   + QX♥   / canyon
+ 271 / 5♥   + KX♥   / capable
+ 272 / 5♥   + A♦    / capital
+ 273 / 5♥   + 2♦    / captain
+ 274 / 5♥   + 3♦    / car
+ 275 / 5♥   + 4♦    / carbon
+ 276 / 5♥   + 5♦    / card
+ 277 / 5♥   + 6♦    / cargo
+ 278 / 5♥   + 7♦    / carpet
+ 279 / 5♥   + 8♦    / carry
+ 280 / 5♥   + 9♦    / cart
+ 281 / 5♥   + 10♦   / case
+ 282 / 5♥   + J♦    / cash
+ 283 / 5♥   + Q♦    / casino
+ 284 / 5♥   + K♦    / castle
+ 285 / 5♥   + JX♦   / casual
+ 286 / 5♥   + QX♦   / cat
+ 287 / 5♥   + KX♦   / catalog
+ 288 / 5♥   + A♣    / catch
+ 289 / 5♥   + 2♣    / category
+ 290 / 5♥   + 3♣    / cattle
+ 291 / 5♥   + 4♣    / caught
+ 292 / 5♥   + 5♣    / cause
+ 293 / 5♥   + 6♣    / caution
+ 294 / 5♥   + 7♣    / cave
+ 295 / 5♥   + 8♣    / ceiling
+ 296 / 5♥   + 9♣    / celery
+ 297 / 5♥   + 10♣   / cement
+ 298 / 5♥   + J♣    / census
+ 299 / 5♥   + Q♣    / century
+ 300 / 5♥   + K♣    / cereal
+ 301 / 5♥   + JX♣   / certain
+ 302 / 5♥   + QX♣   / chair
+ 303 / 5♥   + KX♣   / chalk
+ 304 / 5♥   + A♠    / champion
+ 305 / 5♥   + 2♠    / change
+ 306 / 5♥   + 3♠    / chaos
+ 307 / 5♥   + 4♠    / chapter
+ 308 / 5♥   + 5♠    / charge
+ 309 / 5♥   + 6♠    / chase
+ 310 / 5♥   + 7♠    / chat
+ 311 / 5♥   + 8♠    / cheap
+ 312 / 5♥   + 9♠    / check
+ 313 / 5♥   + 10♠   / cheese
+ 314 / 5♥   + J♠    / chef
+ 315 / 5♥   + Q♠    / cherry
+ 316 / 5♥   + K♠    / chest
+ 317 / 5♥   + JX♠   / chicken
+ 318 / 5♥   + QX♠   / chief
+ 319 / 5♥   + KX♠   / child
+ 320 / 6♥   + A♥    / chimney
+ 321 / 6♥   + 2♥    / choice
+ 322 / 6♥   + 3♥    / choose
+ 323 / 6♥   + 4♥    / chronic
+ 324 / 6♥   + 5♥    / chuckle
+ 325 / 6♥   + 6♥    / chunk
+ 326 / 6♥   + 7♥    / churn
+ 327 / 6♥   + 8♥    / cigar
+ 328 / 6♥   + 9♥    / cinnamon
+ 329 / 6♥   + 10♥   / circle
+ 330 / 6♥   + J♥    / citizen
+ 331 / 6♥   + Q♥    / city
+ 332 / 6♥   + K♥    / civil
+ 333 / 6♥   + JX♥   / claim
+ 334 / 6♥   + QX♥   / clap
+ 335 / 6♥   + KX♥   / clarify
+ 336 / 6♥   + A♦    / claw
+ 337 / 6♥   + 2♦    / clay
+ 338 / 6♥   + 3♦    / clean
+ 339 / 6♥   + 4♦    / clerk
+ 340 / 6♥   + 5♦    / clever
+ 341 / 6♥   + 6♦    / click
+ 342 / 6♥   + 7♦    / client
+ 343 / 6♥   + 8♦    / cliff
+ 344 / 6♥   + 9♦    / climb
+ 345 / 6♥   + 10♦   / clinic
+ 346 / 6♥   + J♦    / clip
+ 347 / 6♥   + Q♦    / clock
+ 348 / 6♥   + K♦    / clog
+ 349 / 6♥   + JX♦   / close
+ 350 / 6♥   + QX♦   / cloth
+ 351 / 6♥   + KX♦   / cloud
+ 352 / 6♥   + A♣    / clown
+ 353 / 6♥   + 2♣    / club
+ 354 / 6♥   + 3♣    / clump
+ 355 / 6♥   + 4♣    / cluster
+ 356 / 6♥   + 5♣    / clutch
+ 357 / 6♥   + 6♣    / coach
+ 358 / 6♥   + 7♣    / coast
+ 359 / 6♥   + 8♣    / coconut
+ 360 / 6♥   + 9♣    / code
+ 361 / 6♥   + 10♣   / coffee
+ 362 / 6♥   + J♣    / coil
+ 363 / 6♥   + Q♣    / coin
+ 364 / 6♥   + K♣    / collect
+ 365 / 6♥   + JX♣   / color
+ 366 / 6♥   + QX♣   / column
+ 367 / 6♥   + KX♣   / combine
+ 368 / 6♥   + A♠    / come
+ 369 / 6♥   + 2♠    / comfort
+ 370 / 6♥   + 3♠    / comic
+ 371 / 6♥   + 4♠    / common
+ 372 / 6♥   + 5♠    / company
+ 373 / 6♥   + 6♠    / concert
+ 374 / 6♥   + 7♠    / conduct
+ 375 / 6♥   + 8♠    / confirm
+ 376 / 6♥   + 9♠    / congress
+ 377 / 6♥   + 10♠   / connect
+ 378 / 6♥   + J♠    / consider
+ 379 / 6♥   + Q♠    / control
+ 380 / 6♥   + K♠    / convince
+ 381 / 6♥   + JX♠   / cook
+ 382 / 6♥   + QX♠   / cool
+ 383 / 6♥   + KX♠   / copper
+ 384 / 7♥   + A♥    / copy
+ 385 / 7♥   + 2♥    / coral
+ 386 / 7♥   + 3♥    / core
+ 387 / 7♥   + 4♥    / corn
+ 388 / 7♥   + 5♥    / correct
+ 389 / 7♥   + 6♥    / cost
+ 390 / 7♥   + 7♥    / cotton
+ 391 / 7♥   + 8♥    / couch
+ 392 / 7♥   + 9♥    / country
+ 393 / 7♥   + 10♥   / couple
+ 394 / 7♥   + J♥    / course
+ 395 / 7♥   + Q♥    / cousin
+ 396 / 7♥   + K♥    / cover
+ 397 / 7♥   + JX♥   / coyote
+ 398 / 7♥   + QX♥   / crack
+ 399 / 7♥   + KX♥   / cradle
+ 400 / 7♥   + A♦    / craft
+ 401 / 7♥   + 2♦    / cram
+ 402 / 7♥   + 3♦    / crane
+ 403 / 7♥   + 4♦    / crash
+ 404 / 7♥   + 5♦    / crater
+ 405 / 7♥   + 6♦    / crawl
+ 406 / 7♥   + 7♦    / crazy
+ 407 / 7♥   + 8♦    / cream
+ 408 / 7♥   + 9♦    / credit
+ 409 / 7♥   + 10♦   / creek
+ 410 / 7♥   + J♦    / crew
+ 411 / 7♥   + Q♦    / cricket
+ 412 / 7♥   + K♦    / crime
+ 413 / 7♥   + JX♦   / crisp
+ 414 / 7♥   + QX♦   / critic
+ 415 / 7♥   + KX♦   / crop
+ 416 / 7♥   + A♣    / cross
+ 417 / 7♥   + 2♣    / crouch
+ 418 / 7♥   + 3♣    / crowd
+ 419 / 7♥   + 4♣    / crucial
+ 420 / 7♥   + 5♣    / cruel
+ 421 / 7♥   + 6♣    / cruise
+ 422 / 7♥   + 7♣    / crumble
+ 423 / 7♥   + 8♣    / crunch
+ 424 / 7♥   + 9♣    / crush
+ 425 / 7♥   + 10♣   / cry
+ 426 / 7♥   + J♣    / crystal
+ 427 / 7♥   + Q♣    / cube
+ 428 / 7♥   + K♣    / culture
+ 429 / 7♥   + JX♣   / cup
+ 430 / 7♥   + QX♣   / cupboard
+ 431 / 7♥   + KX♣   / curious
+ 432 / 7♥   + A♠    / current
+ 433 / 7♥   + 2♠    / curtain
+ 434 / 7♥   + 3♠    / curve
+ 435 / 7♥   + 4♠    / cushion
+ 436 / 7♥   + 5♠    / custom
+ 437 / 7♥   + 6♠    / cute
+ 438 / 7♥   + 7♠    / cycle
+ 439 / 7♥   + 8♠    / dad
+ 440 / 7♥   + 9♠    / damage
+ 441 / 7♥   + 10♠   / damp
+ 442 / 7♥   + J♠    / dance
+ 443 / 7♥   + Q♠    / danger
+ 444 / 7♥   + K♠    / daring
+ 445 / 7♥   + JX♠   / dash
+ 446 / 7♥   + QX♠   / daughter
+ 447 / 7♥   + KX♠   / dawn
+ 448 / 8♥   + A♥    / day
+ 449 / 8♥   + 2♥    / deal
+ 450 / 8♥   + 3♥    / debate
+ 451 / 8♥   + 4♥    / debris
+ 452 / 8♥   + 5♥    / decade
+ 453 / 8♥   + 6♥    / december
+ 454 / 8♥   + 7♥    / decide
+ 455 / 8♥   + 8♥    / decline
+ 456 / 8♥   + 9♥    / decorate
+ 457 / 8♥   + 10♥   / decrease
+ 458 / 8♥   + J♥    / deer
+ 459 / 8♥   + Q♥    / defense
+ 460 / 8♥   + K♥    / define
+ 461 / 8♥   + JX♥   / defy
+ 462 / 8♥   + QX♥   / degree
+ 463 / 8♥   + KX♥   / delay
+ 464 / 8♥   + A♦    / deliver
+ 465 / 8♥   + 2♦    / demand
+ 466 / 8♥   + 3♦    / demise
+ 467 / 8♥   + 4♦    / denial
+ 468 / 8♥   + 5♦    / dentist
+ 469 / 8♥   + 6♦    / deny
+ 470 / 8♥   + 7♦    / depart
+ 471 / 8♥   + 8♦    / depend
+ 472 / 8♥   + 9♦    / deposit
+ 473 / 8♥   + 10♦   / depth
+ 474 / 8♥   + J♦    / deputy
+ 475 / 8♥   + Q♦    / derive
+ 476 / 8♥   + K♦    / describe
+ 477 / 8♥   + JX♦   / desert
+ 478 / 8♥   + QX♦   / design
+ 479 / 8♥   + KX♦   / desk
+ 480 / 8♥   + A♣    / despair
+ 481 / 8♥   + 2♣    / destroy
+ 482 / 8♥   + 3♣    / detail
+ 483 / 8♥   + 4♣    / detect
+ 484 / 8♥   + 5♣    / develop
+ 485 / 8♥   + 6♣    / device
+ 486 / 8♥   + 7♣    / devote
+ 487 / 8♥   + 8♣    / diagram
+ 488 / 8♥   + 9♣    / dial
+ 489 / 8♥   + 10♣   / diamond
+ 490 / 8♥   + J♣    / diary
+ 491 / 8♥   + Q♣    / dice
+ 492 / 8♥   + K♣    / diesel
+ 493 / 8♥   + JX♣   / diet
+ 494 / 8♥   + QX♣   / differ
+ 495 / 8♥   + KX♣   / digital
+ 496 / 8♥   + A♠    / dignity
+ 497 / 8♥   + 2♠    / dilemma
+ 498 / 8♥   + 3♠    / dinner
+ 499 / 8♥   + 4♠    / dinosaur
+ 500 / 8♥   + 5♠    / direct
+ 501 / 8♥   + 6♠    / dirt
+ 502 / 8♥   + 7♠    / disagree
+ 503 / 8♥   + 8♠    / discover
+ 504 / 8♥   + 9♠    / disease
+ 505 / 8♥   + 10♠   / dish
+ 506 / 8♥   + J♠    / dismiss
+ 507 / 8♥   + Q♠    / disorder
+ 508 / 8♥   + K♠    / display
+ 509 / 8♥   + JX♠   / distance
+ 510 / 8♥   + QX♠   / divert
+ 511 / 8♥   + KX♠   / divide
+ 512 / A♦   + A♥    / divorce
+ 513 / A♦   + 2♥    / dizzy
+ 514 / A♦   + 3♥    / doctor
+ 515 / A♦   + 4♥    / document
+ 516 / A♦   + 5♥    / dog
+ 517 / A♦   + 6♥    / doll
+ 518 / A♦   + 7♥    / dolphin
+ 519 / A♦   + 8♥    / domain
+ 520 / A♦   + 9♥    / donate
+ 521 / A♦   + 10♥   / donkey
+ 522 / A♦   + J♥    / donor
+ 523 / A♦   + Q♥    / door
+ 524 / A♦   + K♥    / dose
+ 525 / A♦   + JX♥   / double
+ 526 / A♦   + QX♥   / dove
+ 527 / A♦   + KX♥   / draft
+ 528 / A♦   + A♦    / dragon
+ 529 / A♦   + 2♦    / drama
+ 530 / A♦   + 3♦    / drastic
+ 531 / A♦   + 4♦    / draw
+ 532 / A♦   + 5♦    / dream
+ 533 / A♦   + 6♦    / dress
+ 534 / A♦   + 7♦    / drift
+ 535 / A♦   + 8♦    / drill
+ 536 / A♦   + 9♦    / drink
+ 537 / A♦   + 10♦   / drip
+ 538 / A♦   + J♦    / drive
+ 539 / A♦   + Q♦    / drop
+ 540 / A♦   + K♦    / drum
+ 541 / A♦   + JX♦   / dry
+ 542 / A♦   + QX♦   / duck
+ 543 / A♦   + KX♦   / dumb
+ 544 / A♦   + A♣    / dune
+ 545 / A♦   + 2♣    / during
+ 546 / A♦   + 3♣    / dust
+ 547 / A♦   + 4♣    / dutch
+ 548 / A♦   + 5♣    / duty
+ 549 / A♦   + 6♣    / dwarf
+ 550 / A♦   + 7♣    / dynamic
+ 551 / A♦   + 8♣    / eager
+ 552 / A♦   + 9♣    / eagle
+ 553 / A♦   + 10♣   / early
+ 554 / A♦   + J♣    / earn
+ 555 / A♦   + Q♣    / earth
+ 556 / A♦   + K♣    / easily
+ 557 / A♦   + JX♣   / east
+ 558 / A♦   + QX♣   / easy
+ 559 / A♦   + KX♣   / echo
+ 560 / A♦   + A♠    / ecology
+ 561 / A♦   + 2♠    / economy
+ 562 / A♦   + 3♠    / edge
+ 563 / A♦   + 4♠    / edit
+ 564 / A♦   + 5♠    / educate
+ 565 / A♦   + 6♠    / effort
+ 566 / A♦   + 7♠    / egg
+ 567 / A♦   + 8♠    / eight
+ 568 / A♦   + 9♠    / either
+ 569 / A♦   + 10♠   / elbow
+ 570 / A♦   + J♠    / elder
+ 571 / A♦   + Q♠    / electric
+ 572 / A♦   + K♠    / elegant
+ 573 / A♦   + JX♠   / element
+ 574 / A♦   + QX♠   / elephant
+ 575 / A♦   + KX♠   / elevator
+ 576 / 2♦   + A♥    / elite
+ 577 / 2♦   + 2♥    / else
+ 578 / 2♦   + 3♥    / embark
+ 579 / 2♦   + 4♥    / embody
+ 580 / 2♦   + 5♥    / embrace
+ 581 / 2♦   + 6♥    / emerge
+ 582 / 2♦   + 7♥    / emotion
+ 583 / 2♦   + 8♥    / employ
+ 584 / 2♦   + 9♥    / empower
+ 585 / 2♦   + 10♥   / empty
+ 586 / 2♦   + J♥    / enable
+ 587 / 2♦   + Q♥    / enact
+ 588 / 2♦   + K♥    / end
+ 589 / 2♦   + JX♥   / endless
+ 590 / 2♦   + QX♥   / endorse
+ 591 / 2♦   + KX♥   / enemy
+ 592 / 2♦   + A♦    / energy
+ 593 / 2♦   + 2♦    / enforce
+ 594 / 2♦   + 3♦    / engage
+ 595 / 2♦   + 4♦    / engine
+ 596 / 2♦   + 5♦    / enhance
+ 597 / 2♦   + 6♦    / enjoy
+ 598 / 2♦   + 7♦    / enlist
+ 599 / 2♦   + 8♦    / enough
+ 600 / 2♦   + 9♦    / enrich
+ 601 / 2♦   + 10♦   / enroll
+ 602 / 2♦   + J♦    / ensure
+ 603 / 2♦   + Q♦    / enter
+ 604 / 2♦   + K♦    / entire
+ 605 / 2♦   + JX♦   / entry
+ 606 / 2♦   + QX♦   / envelope
+ 607 / 2♦   + KX♦   / episode
+ 608 / 2♦   + A♣    / equal
+ 609 / 2♦   + 2♣    / equip
+ 610 / 2♦   + 3♣    / era
+ 611 / 2♦   + 4♣    / erase
+ 612 / 2♦   + 5♣    / erode
+ 613 / 2♦   + 6♣    / erosion
+ 614 / 2♦   + 7♣    / error
+ 615 / 2♦   + 8♣    / erupt
+ 616 / 2♦   + 9♣    / escape
+ 617 / 2♦   + 10♣   / essay
+ 618 / 2♦   + J♣    / essence
+ 619 / 2♦   + Q♣    / estate
+ 620 / 2♦   + K♣    / eternal
+ 621 / 2♦   + JX♣   / ethics
+ 622 / 2♦   + QX♣   / evidence
+ 623 / 2♦   + KX♣   / evil
+ 624 / 2♦   + A♠    / evoke
+ 625 / 2♦   + 2♠    / evolve
+ 626 / 2♦   + 3♠    / exact
+ 627 / 2♦   + 4♠    / example
+ 628 / 2♦   + 5♠    / excess
+ 629 / 2♦   + 6♠    / exchange
+ 630 / 2♦   + 7♠    / excite
+ 631 / 2♦   + 8♠    / exclude
+ 632 / 2♦   + 9♠    / excuse
+ 633 / 2♦   + 10♠   / execute
+ 634 / 2♦   + J♠    / exercise
+ 635 / 2♦   + Q♠    / exhaust
+ 636 / 2♦   + K♠    / exhibit
+ 637 / 2♦   + JX♠   / exile
+ 638 / 2♦   + QX♠   / exist
+ 639 / 2♦   + KX♠   / exit
+ 640 / 3♦   + A♥    / exotic
+ 641 / 3♦   + 2♥    / expand
+ 642 / 3♦   + 3♥    / expect
+ 643 / 3♦   + 4♥    / expire
+ 644 / 3♦   + 5♥    / explain
+ 645 / 3♦   + 6♥    / expose
+ 646 / 3♦   + 7♥    / express
+ 647 / 3♦   + 8♥    / extend
+ 648 / 3♦   + 9♥    / extra
+ 649 / 3♦   + 10♥   / eye
+ 650 / 3♦   + J♥    / eyebrow
+ 651 / 3♦   + Q♥    / fabric
+ 652 / 3♦   + K♥    / face
+ 653 / 3♦   + JX♥   / faculty
+ 654 / 3♦   + QX♥   / fade
+ 655 / 3♦   + KX♥   / faint
+ 656 / 3♦   + A♦    / faith
+ 657 / 3♦   + 2♦    / fall
+ 658 / 3♦   + 3♦    / false
+ 659 / 3♦   + 4♦    / fame
+ 660 / 3♦   + 5♦    / family
+ 661 / 3♦   + 6♦    / famous
+ 662 / 3♦   + 7♦    / fan
+ 663 / 3♦   + 8♦    / fancy
+ 664 / 3♦   + 9♦    / fantasy
+ 665 / 3♦   + 10♦   / farm
+ 666 / 3♦   + J♦    / fashion
+ 667 / 3♦   + Q♦    / fat
+ 668 / 3♦   + K♦    / fatal
+ 669 / 3♦   + JX♦   / father
+ 670 / 3♦   + QX♦   / fatigue
+ 671 / 3♦   + KX♦   / fault
+ 672 / 3♦   + A♣    / favorite
+ 673 / 3♦   + 2♣    / feature
+ 674 / 3♦   + 3♣    / february
+ 675 / 3♦   + 4♣    / federal
+ 676 / 3♦   + 5♣    / fee
+ 677 / 3♦   + 6♣    / feed
+ 678 / 3♦   + 7♣    / feel
+ 679 / 3♦   + 8♣    / female
+ 680 / 3♦   + 9♣    / fence
+ 681 / 3♦   + 10♣   / festival
+ 682 / 3♦   + J♣    / fetch
+ 683 / 3♦   + Q♣    / fever
+ 684 / 3♦   + K♣    / few
+ 685 / 3♦   + JX♣   / fiber
+ 686 / 3♦   + QX♣   / fiction
+ 687 / 3♦   + KX♣   / field
+ 688 / 3♦   + A♠    / figure
+ 689 / 3♦   + 2♠    / file
+ 690 / 3♦   + 3♠    / film
+ 691 / 3♦   + 4♠    / filter
+ 692 / 3♦   + 5♠    / final
+ 693 / 3♦   + 6♠    / find
+ 694 / 3♦   + 7♠    / fine
+ 695 / 3♦   + 8♠    / finger
+ 696 / 3♦   + 9♠    / finish
+ 697 / 3♦   + 10♠   / fire
+ 698 / 3♦   + J♠    / firm
+ 699 / 3♦   + Q♠    / first
+ 700 / 3♦   + K♠    / fiscal
+ 701 / 3♦   + JX♠   / fish
+ 702 / 3♦   + QX♠   / fit
+ 703 / 3♦   + KX♠   / fitness
+ 704 / 4♦   + A♥    / fix
+ 705 / 4♦   + 2♥    / flag
+ 706 / 4♦   + 3♥    / flame
+ 707 / 4♦   + 4♥    / flash
+ 708 / 4♦   + 5♥    / flat
+ 709 / 4♦   + 6♥    / flavor
+ 710 / 4♦   + 7♥    / flee
+ 711 / 4♦   + 8♥    / flight
+ 712 / 4♦   + 9♥    / flip
+ 713 / 4♦   + 10♥   / float
+ 714 / 4♦   + J♥    / flock
+ 715 / 4♦   + Q♥    / floor
+ 716 / 4♦   + K♥    / flower
+ 717 / 4♦   + JX♥   / fluid
+ 718 / 4♦   + QX♥   / flush
+ 719 / 4♦   + KX♥   / fly
+ 720 / 4♦   + A♦    / foam
+ 721 / 4♦   + 2♦    / focus
+ 722 / 4♦   + 3♦    / fog
+ 723 / 4♦   + 4♦    / foil
+ 724 / 4♦   + 5♦    / fold
+ 725 / 4♦   + 6♦    / follow
+ 726 / 4♦   + 7♦    / food
+ 727 / 4♦   + 8♦    / foot
+ 728 / 4♦   + 9♦    / force
+ 729 / 4♦   + 10♦   / forest
+ 730 / 4♦   + J♦    / forget
+ 731 / 4♦   + Q♦    / fork
+ 732 / 4♦   + K♦    / fortune
+ 733 / 4♦   + JX♦   / forum
+ 734 / 4♦   + QX♦   / forward
+ 735 / 4♦   + KX♦   / fossil
+ 736 / 4♦   + A♣    / foster
+ 737 / 4♦   + 2♣    / found
+ 738 / 4♦   + 3♣    / fox
+ 739 / 4♦   + 4♣    / fragile
+ 740 / 4♦   + 5♣    / frame
+ 741 / 4♦   + 6♣    / frequent
+ 742 / 4♦   + 7♣    / fresh
+ 743 / 4♦   + 8♣    / friend
+ 744 / 4♦   + 9♣    / fringe
+ 745 / 4♦   + 10♣   / frog
+ 746 / 4♦   + J♣    / front
+ 747 / 4♦   + Q♣    / frost
+ 748 / 4♦   + K♣    / frown
+ 749 / 4♦   + JX♣   / frozen
+ 750 / 4♦   + QX♣   / fruit
+ 751 / 4♦   + KX♣   / fuel
+ 752 / 4♦   + A♠    / fun
+ 753 / 4♦   + 2♠    / funny
+ 754 / 4♦   + 3♠    / furnace
+ 755 / 4♦   + 4♠    / fury
+ 756 / 4♦   + 5♠    / future
+ 757 / 4♦   + 6♠    / gadget
+ 758 / 4♦   + 7♠    / gain
+ 759 / 4♦   + 8♠    / galaxy
+ 760 / 4♦   + 9♠    / gallery
+ 761 / 4♦   + 10♠   / game
+ 762 / 4♦   + J♠    / gap
+ 763 / 4♦   + Q♠    / garage
+ 764 / 4♦   + K♠    / garbage
+ 765 / 4♦   + JX♠   / garden
+ 766 / 4♦   + QX♠   / garlic
+ 767 / 4♦   + KX♠   / garment
+ 768 / 5♦   + A♥    / gas
+ 769 / 5♦   + 2♥    / gasp
+ 770 / 5♦   + 3♥    / gate
+ 771 / 5♦   + 4♥    / gather
+ 772 / 5♦   + 5♥    / gauge
+ 773 / 5♦   + 6♥    / gaze
+ 774 / 5♦   + 7♥    / general
+ 775 / 5♦   + 8♥    / genius
+ 776 / 5♦   + 9♥    / genre
+ 777 / 5♦   + 10♥   / gentle
+ 778 / 5♦   + J♥    / genuine
+ 779 / 5♦   + Q♥    / gesture
+ 780 / 5♦   + K♥    / ghost
+ 781 / 5♦   + JX♥   / giant
+ 782 / 5♦   + QX♥   / gift
+ 783 / 5♦   + KX♥   / giggle
+ 784 / 5♦   + A♦    / ginger
+ 785 / 5♦   + 2♦    / giraffe
+ 786 / 5♦   + 3♦    / girl
+ 787 / 5♦   + 4♦    / give
+ 788 / 5♦   + 5♦    / glad
+ 789 / 5♦   + 6♦    / glance
+ 790 / 5♦   + 7♦    / glare
+ 791 / 5♦   + 8♦    / glass
+ 792 / 5♦   + 9♦    / glide
+ 793 / 5♦   + 10♦   / glimpse
+ 794 / 5♦   + J♦    / globe
+ 795 / 5♦   + Q♦    / gloom
+ 796 / 5♦   + K♦    / glory
+ 797 / 5♦   + JX♦   / glove
+ 798 / 5♦   + QX♦   / glow
+ 799 / 5♦   + KX♦   / glue
+ 800 / 5♦   + A♣    / goat
+ 801 / 5♦   + 2♣    / goddess
+ 802 / 5♦   + 3♣    / gold
+ 803 / 5♦   + 4♣    / good
+ 804 / 5♦   + 5♣    / goose
+ 805 / 5♦   + 6♣    / gorilla
+ 806 / 5♦   + 7♣    / gospel
+ 807 / 5♦   + 8♣    / gossip
+ 808 / 5♦   + 9♣    / govern
+ 809 / 5♦   + 10♣   / gown
+ 810 / 5♦   + J♣    / grab
+ 811 / 5♦   + Q♣    / grace
+ 812 / 5♦   + K♣    / grain
+ 813 / 5♦   + JX♣   / grant
+ 814 / 5♦   + QX♣   / grape
+ 815 / 5♦   + KX♣   / grass
+ 816 / 5♦   + A♠    / gravity
+ 817 / 5♦   + 2♠    / great
+ 818 / 5♦   + 3♠    / green
+ 819 / 5♦   + 4♠    / grid
+ 820 / 5♦   + 5♠    / grief
+ 821 / 5♦   + 6♠    / grit
+ 822 / 5♦   + 7♠    / grocery
+ 823 / 5♦   + 8♠    / group
+ 824 / 5♦   + 9♠    / grow
+ 825 / 5♦   + 10♠   / grunt
+ 826 / 5♦   + J♠    / guard
+ 827 / 5♦   + Q♠    / guess
+ 828 / 5♦   + K♠    / guide
+ 829 / 5♦   + JX♠   / guilt
+ 830 / 5♦   + QX♠   / guitar
+ 831 / 5♦   + KX♠   / gun
+ 832 / 6♦   + A♥    / gym
+ 833 / 6♦   + 2♥    / habit
+ 834 / 6♦   + 3♥    / hair
+ 835 / 6♦   + 4♥    / half
+ 836 / 6♦   + 5♥    / hammer
+ 837 / 6♦   + 6♥    / hamster
+ 838 / 6♦   + 7♥    / hand
+ 839 / 6♦   + 8♥    / happy
+ 840 / 6♦   + 9♥    / harbor
+ 841 / 6♦   + 10♥   / hard
+ 842 / 6♦   + J♥    / harsh
+ 843 / 6♦   + Q♥    / harvest
+ 844 / 6♦   + K♥    / hat
+ 845 / 6♦   + JX♥   / have
+ 846 / 6♦   + QX♥   / hawk
+ 847 / 6♦   + KX♥   / hazard
+ 848 / 6♦   + A♦    / head
+ 849 / 6♦   + 2♦    / health
+ 850 / 6♦   + 3♦    / heart
+ 851 / 6♦   + 4♦    / heavy
+ 852 / 6♦   + 5♦    / hedgehog
+ 853 / 6♦   + 6♦    / height
+ 854 / 6♦   + 7♦    / hello
+ 855 / 6♦   + 8♦    / helmet
+ 856 / 6♦   + 9♦    / help
+ 857 / 6♦   + 10♦   / hen
+ 858 / 6♦   + J♦    / hero
+ 859 / 6♦   + Q♦    / hidden
+ 860 / 6♦   + K♦    / high
+ 861 / 6♦   + JX♦   / hill
+ 862 / 6♦   + QX♦   / hint
+ 863 / 6♦   + KX♦   / hip
+ 864 / 6♦   + A♣    / hire
+ 865 / 6♦   + 2♣    / history
+ 866 / 6♦   + 3♣    / hobby
+ 867 / 6♦   + 4♣    / hockey
+ 868 / 6♦   + 5♣    / hold
+ 869 / 6♦   + 6♣    / hole
+ 870 / 6♦   + 7♣    / holiday
+ 871 / 6♦   + 8♣    / hollow
+ 872 / 6♦   + 9♣    / home
+ 873 / 6♦   + 10♣   / honey
+ 874 / 6♦   + J♣    / hood
+ 875 / 6♦   + Q♣    / hope
+ 876 / 6♦   + K♣    / horn
+ 877 / 6♦   + JX♣   / horror
+ 878 / 6♦   + QX♣   / horse
+ 879 / 6♦   + KX♣   / hospital
+ 880 / 6♦   + A♠    / host
+ 881 / 6♦   + 2♠    / hotel
+ 882 / 6♦   + 3♠    / hour
+ 883 / 6♦   + 4♠    / hover
+ 884 / 6♦   + 5♠    / hub
+ 885 / 6♦   + 6♠    / huge
+ 886 / 6♦   + 7♠    / human
+ 887 / 6♦   + 8♠    / humble
+ 888 / 6♦   + 9♠    / humor
+ 889 / 6♦   + 10♠   / hundred
+ 890 / 6♦   + J♠    / hungry
+ 891 / 6♦   + Q♠    / hunt
+ 892 / 6♦   + K♠    / hurdle
+ 893 / 6♦   + JX♠   / hurry
+ 894 / 6♦   + QX♠   / hurt
+ 895 / 6♦   + KX♠   / husband
+ 896 / 7♦   + A♥    / hybrid
+ 897 / 7♦   + 2♥    / ice
+ 898 / 7♦   + 3♥    / icon
+ 899 / 7♦   + 4♥    / idea
+ 900 / 7♦   + 5♥    / identify
+ 901 / 7♦   + 6♥    / idle
+ 902 / 7♦   + 7♥    / ignore
+ 903 / 7♦   + 8♥    / ill
+ 904 / 7♦   + 9♥    / illegal
+ 905 / 7♦   + 10♥   / illness
+ 906 / 7♦   + J♥    / image
+ 907 / 7♦   + Q♥    / imitate
+ 908 / 7♦   + K♥    / immense
+ 909 / 7♦   + JX♥   / immune
+ 910 / 7♦   + QX♥   / impact
+ 911 / 7♦   + KX♥   / impose
+ 912 / 7♦   + A♦    / improve
+ 913 / 7♦   + 2♦    / impulse
+ 914 / 7♦   + 3♦    / inch
+ 915 / 7♦   + 4♦    / include
+ 916 / 7♦   + 5♦    / income
+ 917 / 7♦   + 6♦    / increase
+ 918 / 7♦   + 7♦    / index
+ 919 / 7♦   + 8♦    / indicate
+ 920 / 7♦   + 9♦    / indoor
+ 921 / 7♦   + 10♦   / industry
+ 922 / 7♦   + J♦    / infant
+ 923 / 7♦   + Q♦    / inflict
+ 924 / 7♦   + K♦    / inform
+ 925 / 7♦   + JX♦   / inhale
+ 926 / 7♦   + QX♦   / inherit
+ 927 / 7♦   + KX♦   / initial
+ 928 / 7♦   + A♣    / inject
+ 929 / 7♦   + 2♣    / injury
+ 930 / 7♦   + 3♣    / inmate
+ 931 / 7♦   + 4♣    / inner
+ 932 / 7♦   + 5♣    / innocent
+ 933 / 7♦   + 6♣    / input
+ 934 / 7♦   + 7♣    / inquiry
+ 935 / 7♦   + 8♣    / insane
+ 936 / 7♦   + 9♣    / insect
+ 937 / 7♦   + 10♣   / inside
+ 938 / 7♦   + J♣    / inspire
+ 939 / 7♦   + Q♣    / install
+ 940 / 7♦   + K♣    / intact
+ 941 / 7♦   + JX♣   / interest
+ 942 / 7♦   + QX♣   / into
+ 943 / 7♦   + KX♣   / invest
+ 944 / 7♦   + A♠    / invite
+ 945 / 7♦   + 2♠    / involve
+ 946 / 7♦   + 3♠    / iron
+ 947 / 7♦   + 4♠    / island
+ 948 / 7♦   + 5♠    / isolate
+ 949 / 7♦   + 6♠    / issue
+ 950 / 7♦   + 7♠    / item
+ 951 / 7♦   + 8♠    / ivory
+ 952 / 7♦   + 9♠    / jacket
+ 953 / 7♦   + 10♠   / jaguar
+ 954 / 7♦   + J♠    / jar
+ 955 / 7♦   + Q♠    / jazz
+ 956 / 7♦   + K♠    / jealous
+ 957 / 7♦   + JX♠   / jeans
+ 958 / 7♦   + QX♠   / jelly
+ 959 / 7♦   + KX♠   / jewel
+ 960 / 8♦   + A♥    / job
+ 961 / 8♦   + 2♥    / join
+ 962 / 8♦   + 3♥    / joke
+ 963 / 8♦   + 4♥    / journey
+ 964 / 8♦   + 5♥    / joy
+ 965 / 8♦   + 6♥    / judge
+ 966 / 8♦   + 7♥    / juice
+ 967 / 8♦   + 8♥    / jump
+ 968 / 8♦   + 9♥    / jungle
+ 969 / 8♦   + 10♥   / junior
+ 970 / 8♦   + J♥    / junk
+ 971 / 8♦   + Q♥    / just
+ 972 / 8♦   + K♥    / kangaroo
+ 973 / 8♦   + JX♥   / keen
+ 974 / 8♦   + QX♥   / keep
+ 975 / 8♦   + KX♥   / ketchup
+ 976 / 8♦   + A♦    / key
+ 977 / 8♦   + 2♦    / kick
+ 978 / 8♦   + 3♦    / kid
+ 979 / 8♦   + 4♦    / kidney
+ 980 / 8♦   + 5♦    / kind
+ 981 / 8♦   + 6♦    / kingdom
+ 982 / 8♦   + 7♦    / kiss
+ 983 / 8♦   + 8♦    / kit
+ 984 / 8♦   + 9♦    / kitchen
+ 985 / 8♦   + 10♦   / kite
+ 986 / 8♦   + J♦    / kitten
+ 987 / 8♦   + Q♦    / kiwi
+ 988 / 8♦   + K♦    / knee
+ 989 / 8♦   + JX♦   / knife
+ 990 / 8♦   + QX♦   / knock
+ 991 / 8♦   + KX♦   / know
+ 992 / 8♦   + A♣    / lab
+ 993 / 8♦   + 2♣    / label
+ 994 / 8♦   + 3♣    / labor
+ 995 / 8♦   + 4♣    / ladder
+ 996 / 8♦   + 5♣    / lady
+ 997 / 8♦   + 6♣    / lake
+ 998 / 8♦   + 7♣    / lamp
+ 999 / 8♦   + 8♣    / language
+1000 / 8♦   + 9♣    / laptop
+1001 / 8♦   + 10♣   / large
+1002 / 8♦   + J♣    / later
+1003 / 8♦   + Q♣    / latin
+1004 / 8♦   + K♣    / laugh
+1005 / 8♦   + JX♣   / laundry
+1006 / 8♦   + QX♣   / lava
+1007 / 8♦   + KX♣   / law
+1008 / 8♦   + A♠    / lawn
+1009 / 8♦   + 2♠    / lawsuit
+1010 / 8♦   + 3♠    / layer
+1011 / 8♦   + 4♠    / lazy
+1012 / 8♦   + 5♠    / leader
+1013 / 8♦   + 6♠    / leaf
+1014 / 8♦   + 7♠    / learn
+1015 / 8♦   + 8♠    / leave
+1016 / 8♦   + 9♠    / lecture
+1017 / 8♦   + 10♠   / left
+1018 / 8♦   + J♠    / leg
+1019 / 8♦   + Q♠    / legal
+1020 / 8♦   + K♠    / legend
+1021 / 8♦   + JX♠   / leisure
+1022 / 8♦   + QX♠   / lemon
+1023 / 8♦   + KX♠   / lend
+1024 / A♣   + A♥    / length
+1025 / A♣   + 2♥    / lens
+1026 / A♣   + 3♥    / leopard
+1027 / A♣   + 4♥    / lesson
+1028 / A♣   + 5♥    / letter
+1029 / A♣   + 6♥    / level
+1030 / A♣   + 7♥    / liar
+1031 / A♣   + 8♥    / liberty
+1032 / A♣   + 9♥    / library
+1033 / A♣   + 10♥   / license
+1034 / A♣   + J♥    / life
+1035 / A♣   + Q♥    / lift
+1036 / A♣   + K♥    / light
+1037 / A♣   + JX♥   / like
+1038 / A♣   + QX♥   / limb
+1039 / A♣   + KX♥   / limit
+1040 / A♣   + A♦    / link
+1041 / A♣   + 2♦    / lion
+1042 / A♣   + 3♦    / liquid
+1043 / A♣   + 4♦    / list
+1044 / A♣   + 5♦    / little
+1045 / A♣   + 6♦    / live
+1046 / A♣   + 7♦    / lizard
+1047 / A♣   + 8♦    / load
+1048 / A♣   + 9♦    / loan
+1049 / A♣   + 10♦   / lobster
+1050 / A♣   + J♦    / local
+1051 / A♣   + Q♦    / lock
+1052 / A♣   + K♦    / logic
+1053 / A♣   + JX♦   / lonely
+1054 / A♣   + QX♦   / long
+1055 / A♣   + KX♦   / loop
+1056 / A♣   + A♣    / lottery
+1057 / A♣   + 2♣    / loud
+1058 / A♣   + 3♣    / lounge
+1059 / A♣   + 4♣    / love
+1060 / A♣   + 5♣    / loyal
+1061 / A♣   + 6♣    / lucky
+1062 / A♣   + 7♣    / luggage
+1063 / A♣   + 8♣    / lumber
+1064 / A♣   + 9♣    / lunar
+1065 / A♣   + 10♣   / lunch
+1066 / A♣   + J♣    / luxury
+1067 / A♣   + Q♣    / lyrics
+1068 / A♣   + K♣    / machine
+1069 / A♣   + JX♣   / mad
+1070 / A♣   + QX♣   / magic
+1071 / A♣   + KX♣   / magnet
+1072 / A♣   + A♠    / maid
+1073 / A♣   + 2♠    / mail
+1074 / A♣   + 3♠    / main
+1075 / A♣   + 4♠    / major
+1076 / A♣   + 5♠    / make
+1077 / A♣   + 6♠    / mammal
+1078 / A♣   + 7♠    / man
+1079 / A♣   + 8♠    / manage
+1080 / A♣   + 9♠    / mandate
+1081 / A♣   + 10♠   / mango
+1082 / A♣   + J♠    / mansion
+1083 / A♣   + Q♠    / manual
+1084 / A♣   + K♠    / maple
+1085 / A♣   + JX♠   / marble
+1086 / A♣   + QX♠   / march
+1087 / A♣   + KX♠   / margin
+1088 / 2♣   + A♥    / marine
+1089 / 2♣   + 2♥    / market
+1090 / 2♣   + 3♥    / marriage
+1091 / 2♣   + 4♥    / mask
+1092 / 2♣   + 5♥    / mass
+1093 / 2♣   + 6♥    / master
+1094 / 2♣   + 7♥    / match
+1095 / 2♣   + 8♥    / material
+1096 / 2♣   + 9♥    / math
+1097 / 2♣   + 10♥   / matrix
+1098 / 2♣   + J♥    / matter
+1099 / 2♣   + Q♥    / maximum
+1100 / 2♣   + K♥    / maze
+1101 / 2♣   + JX♥   / meadow
+1102 / 2♣   + QX♥   / mean
+1103 / 2♣   + KX♥   / measure
+1104 / 2♣   + A♦    / meat
+1105 / 2♣   + 2♦    / mechanic
+1106 / 2♣   + 3♦    / medal
+1107 / 2♣   + 4♦    / media
+1108 / 2♣   + 5♦    / melody
+1109 / 2♣   + 6♦    / melt
+1110 / 2♣   + 7♦    / member
+1111 / 2♣   + 8♦    / memory
+1112 / 2♣   + 9♦    / mention
+1113 / 2♣   + 10♦   / menu
+1114 / 2♣   + J♦    / mercy
+1115 / 2♣   + Q♦    / merge
+1116 / 2♣   + K♦    / merit
+1117 / 2♣   + JX♦   / merry
+1118 / 2♣   + QX♦   / mesh
+1119 / 2♣   + KX♦   / message
+1120 / 2♣   + A♣    / metal
+1121 / 2♣   + 2♣    / method
+1122 / 2♣   + 3♣    / middle
+1123 / 2♣   + 4♣    / midnight
+1124 / 2♣   + 5♣    / milk
+1125 / 2♣   + 6♣    / million
+1126 / 2♣   + 7♣    / mimic
+1127 / 2♣   + 8♣    / mind
+1128 / 2♣   + 9♣    / minimum
+1129 / 2♣   + 10♣   / minor
+1130 / 2♣   + J♣    / minute
+1131 / 2♣   + Q♣    / miracle
+1132 / 2♣   + K♣    / mirror
+1133 / 2♣   + JX♣   / misery
+1134 / 2♣   + QX♣   / miss
+1135 / 2♣   + KX♣   / mistake
+1136 / 2♣   + A♠    / mix
+1137 / 2♣   + 2♠    / mixed
+1138 / 2♣   + 3♠    / mixture
+1139 / 2♣   + 4♠    / mobile
+1140 / 2♣   + 5♠    / model
+1141 / 2♣   + 6♠    / modify
+1142 / 2♣   + 7♠    / mom
+1143 / 2♣   + 8♠    / moment
+1144 / 2♣   + 9♠    / monitor
+1145 / 2♣   + 10♠   / monkey
+1146 / 2♣   + J♠    / monster
+1147 / 2♣   + Q♠    / month
+1148 / 2♣   + K♠    / moon
+1149 / 2♣   + JX♠   / moral
+1150 / 2♣   + QX♠   / more
+1151 / 2♣   + KX♠   / morning
+1152 / 3♣   + A♥    / mosquito
+1153 / 3♣   + 2♥    / mother
+1154 / 3♣   + 3♥    / motion
+1155 / 3♣   + 4♥    / motor
+1156 / 3♣   + 5♥    / mountain
+1157 / 3♣   + 6♥    / mouse
+1158 / 3♣   + 7♥    / move
+1159 / 3♣   + 8♥    / movie
+1160 / 3♣   + 9♥    / much
+1161 / 3♣   + 10♥   / muffin
+1162 / 3♣   + J♥    / mule
+1163 / 3♣   + Q♥    / multiply
+1164 / 3♣   + K♥    / muscle
+1165 / 3♣   + JX♥   / museum
+1166 / 3♣   + QX♥   / mushroom
+1167 / 3♣   + KX♥   / music
+1168 / 3♣   + A♦    / must
+1169 / 3♣   + 2♦    / mutual
+1170 / 3♣   + 3♦    / myself
+1171 / 3♣   + 4♦    / mystery
+1172 / 3♣   + 5♦    / myth
+1173 / 3♣   + 6♦    / naive
+1174 / 3♣   + 7♦    / name
+1175 / 3♣   + 8♦    / napkin
+1176 / 3♣   + 9♦    / narrow
+1177 / 3♣   + 10♦   / nasty
+1178 / 3♣   + J♦    / nation
+1179 / 3♣   + Q♦    / nature
+1180 / 3♣   + K♦    / near
+1181 / 3♣   + JX♦   / neck
+1182 / 3♣   + QX♦   / need
+1183 / 3♣   + KX♦   / negative
+1184 / 3♣   + A♣    / neglect
+1185 / 3♣   + 2♣    / neither
+1186 / 3♣   + 3♣    / nephew
+1187 / 3♣   + 4♣    / nerve
+1188 / 3♣   + 5♣    / nest
+1189 / 3♣   + 6♣    / net
+1190 / 3♣   + 7♣    / network
+1191 / 3♣   + 8♣    / neutral
+1192 / 3♣   + 9♣    / never
+1193 / 3♣   + 10♣   / news
+1194 / 3♣   + J♣    / next
+1195 / 3♣   + Q♣    / nice
+1196 / 3♣   + K♣    / night
+1197 / 3♣   + JX♣   / noble
+1198 / 3♣   + QX♣   / noise
+1199 / 3♣   + KX♣   / nominee
+1200 / 3♣   + A♠    / noodle
+1201 / 3♣   + 2♠    / normal
+1202 / 3♣   + 3♠    / north
+1203 / 3♣   + 4♠    / nose
+1204 / 3♣   + 5♠    / notable
+1205 / 3♣   + 6♠    / note
+1206 / 3♣   + 7♠    / nothing
+1207 / 3♣   + 8♠    / notice
+1208 / 3♣   + 9♠    / novel
+1209 / 3♣   + 10♠   / now
+1210 / 3♣   + J♠    / nuclear
+1211 / 3♣   + Q♠    / number
+1212 / 3♣   + K♠    / nurse
+1213 / 3♣   + JX♠   / nut
+1214 / 3♣   + QX♠   / oak
+1215 / 3♣   + KX♠   / obey
+1216 / 4♣   + A♥    / object
+1217 / 4♣   + 2♥    / oblige
+1218 / 4♣   + 3♥    / obscure
+1219 / 4♣   + 4♥    / observe
+1220 / 4♣   + 5♥    / obtain
+1221 / 4♣   + 6♥    / obvious
+1222 / 4♣   + 7♥    / occur
+1223 / 4♣   + 8♥    / ocean
+1224 / 4♣   + 9♥    / october
+1225 / 4♣   + 10♥   / odor
+1226 / 4♣   + J♥    / off
+1227 / 4♣   + Q♥    / offer
+1228 / 4♣   + K♥    / office
+1229 / 4♣   + JX♥   / often
+1230 / 4♣   + QX♥   / oil
+1231 / 4♣   + KX♥   / okay
+1232 / 4♣   + A♦    / old
+1233 / 4♣   + 2♦    / olive
+1234 / 4♣   + 3♦    / olympic
+1235 / 4♣   + 4♦    / omit
+1236 / 4♣   + 5♦    / once
+1237 / 4♣   + 6♦    / one
+1238 / 4♣   + 7♦    / onion
+1239 / 4♣   + 8♦    / online
+1240 / 4♣   + 9♦    / only
+1241 / 4♣   + 10♦   / open
+1242 / 4♣   + J♦    / opera
+1243 / 4♣   + Q♦    / opinion
+1244 / 4♣   + K♦    / oppose
+1245 / 4♣   + JX♦   / option
+1246 / 4♣   + QX♦   / orange
+1247 / 4♣   + KX♦   / orbit
+1248 / 4♣   + A♣    / orchard
+1249 / 4♣   + 2♣    / order
+1250 / 4♣   + 3♣    / ordinary
+1251 / 4♣   + 4♣    / organ
+1252 / 4♣   + 5♣    / orient
+1253 / 4♣   + 6♣    / original
+1254 / 4♣   + 7♣    / orphan
+1255 / 4♣   + 8♣    / ostrich
+1256 / 4♣   + 9♣    / other
+1257 / 4♣   + 10♣   / outdoor
+1258 / 4♣   + J♣    / outer
+1259 / 4♣   + Q♣    / output
+1260 / 4♣   + K♣    / outside
+1261 / 4♣   + JX♣   / oval
+1262 / 4♣   + QX♣   / oven
+1263 / 4♣   + KX♣   / over
+1264 / 4♣   + A♠    / own
+1265 / 4♣   + 2♠    / owner
+1266 / 4♣   + 3♠    / oxygen
+1267 / 4♣   + 4♠    / oyster
+1268 / 4♣   + 5♠    / ozone
+1269 / 4♣   + 6♠    / pact
+1270 / 4♣   + 7♠    / paddle
+1271 / 4♣   + 8♠    / page
+1272 / 4♣   + 9♠    / pair
+1273 / 4♣   + 10♠   / palace
+1274 / 4♣   + J♠    / palm
+1275 / 4♣   + Q♠    / panda
+1276 / 4♣   + K♠    / panel
+1277 / 4♣   + JX♠   / panic
+1278 / 4♣   + QX♠   / panther
+1279 / 4♣   + KX♠   / paper
+1280 / 5♣   + A♥    / parade
+1281 / 5♣   + 2♥    / parent
+1282 / 5♣   + 3♥    / park
+1283 / 5♣   + 4♥    / parrot
+1284 / 5♣   + 5♥    / party
+1285 / 5♣   + 6♥    / pass
+1286 / 5♣   + 7♥    / patch
+1287 / 5♣   + 8♥    / path
+1288 / 5♣   + 9♥    / patient
+1289 / 5♣   + 10♥   / patrol
+1290 / 5♣   + J♥    / pattern
+1291 / 5♣   + Q♥    / pause
+1292 / 5♣   + K♥    / pave
+1293 / 5♣   + JX♥   / payment
+1294 / 5♣   + QX♥   / peace
+1295 / 5♣   + KX♥   / peanut
+1296 / 5♣   + A♦    / pear
+1297 / 5♣   + 2♦    / peasant
+1298 / 5♣   + 3♦    / pelican
+1299 / 5♣   + 4♦    / pen
+1300 / 5♣   + 5♦    / penalty
+1301 / 5♣   + 6♦    / pencil
+1302 / 5♣   + 7♦    / people
+1303 / 5♣   + 8♦    / pepper
+1304 / 5♣   + 9♦    / perfect
+1305 / 5♣   + 10♦   / permit
+1306 / 5♣   + J♦    / person
+1307 / 5♣   + Q♦    / pet
+1308 / 5♣   + K♦    / phone
+1309 / 5♣   + JX♦   / photo
+1310 / 5♣   + QX♦   / phrase
+1311 / 5♣   + KX♦   / physical
+1312 / 5♣   + A♣    / piano
+1313 / 5♣   + 2♣    / picnic
+1314 / 5♣   + 3♣    / picture
+1315 / 5♣   + 4♣    / piece
+1316 / 5♣   + 5♣    / pig
+1317 / 5♣   + 6♣    / pigeon
+1318 / 5♣   + 7♣    / pill
+1319 / 5♣   + 8♣    / pilot
+1320 / 5♣   + 9♣    / pink
+1321 / 5♣   + 10♣   / pioneer
+1322 / 5♣   + J♣    / pipe
+1323 / 5♣   + Q♣    / pistol
+1324 / 5♣   + K♣    / pitch
+1325 / 5♣   + JX♣   / pizza
+1326 / 5♣   + QX♣   / place
+1327 / 5♣   + KX♣   / planet
+1328 / 5♣   + A♠    / plastic
+1329 / 5♣   + 2♠    / plate
+1330 / 5♣   + 3♠    / play
+1331 / 5♣   + 4♠    / please
+1332 / 5♣   + 5♠    / pledge
+1333 / 5♣   + 6♠    / pluck
+1334 / 5♣   + 7♠    / plug
+1335 / 5♣   + 8♠    / plunge
+1336 / 5♣   + 9♠    / poem
+1337 / 5♣   + 10♠   / poet
+1338 / 5♣   + J♠    / point
+1339 / 5♣   + Q♠    / polar
+1340 / 5♣   + K♠    / pole
+1341 / 5♣   + JX♠   / police
+1342 / 5♣   + QX♠   / pond
+1343 / 5♣   + KX♠   / pony
+1344 / 6♣   + A♥    / pool
+1345 / 6♣   + 2♥    / popular
+1346 / 6♣   + 3♥    / portion
+1347 / 6♣   + 4♥    / position
+1348 / 6♣   + 5♥    / possible
+1349 / 6♣   + 6♥    / post
+1350 / 6♣   + 7♥    / potato
+1351 / 6♣   + 8♥    / pottery
+1352 / 6♣   + 9♥    / poverty
+1353 / 6♣   + 10♥   / powder
+1354 / 6♣   + J♥    / power
+1355 / 6♣   + Q♥    / practice
+1356 / 6♣   + K♥    / praise
+1357 / 6♣   + JX♥   / predict
+1358 / 6♣   + QX♥   / prefer
+1359 / 6♣   + KX♥   / prepare
+1360 / 6♣   + A♦    / present
+1361 / 6♣   + 2♦    / pretty
+1362 / 6♣   + 3♦    / prevent
+1363 / 6♣   + 4♦    / price
+1364 / 6♣   + 5♦    / pride
+1365 / 6♣   + 6♦    / primary
+1366 / 6♣   + 7♦    / print
+1367 / 6♣   + 8♦    / priority
+1368 / 6♣   + 9♦    / prison
+1369 / 6♣   + 10♦   / private
+1370 / 6♣   + J♦    / prize
+1371 / 6♣   + Q♦    / problem
+1372 / 6♣   + K♦    / process
+1373 / 6♣   + JX♦   / produce
+1374 / 6♣   + QX♦   / profit
+1375 / 6♣   + KX♦   / program
+1376 / 6♣   + A♣    / project
+1377 / 6♣   + 2♣    / promote
+1378 / 6♣   + 3♣    / proof
+1379 / 6♣   + 4♣    / property
+1380 / 6♣   + 5♣    / prosper
+1381 / 6♣   + 6♣    / protect
+1382 / 6♣   + 7♣    / proud
+1383 / 6♣   + 8♣    / provide
+1384 / 6♣   + 9♣    / public
+1385 / 6♣   + 10♣   / pudding
+1386 / 6♣   + J♣    / pull
+1387 / 6♣   + Q♣    / pulp
+1388 / 6♣   + K♣    / pulse
+1389 / 6♣   + JX♣   / pumpkin
+1390 / 6♣   + QX♣   / punch
+1391 / 6♣   + KX♣   / pupil
+1392 / 6♣   + A♠    / puppy
+1393 / 6♣   + 2♠    / purchase
+1394 / 6♣   + 3♠    / purity
+1395 / 6♣   + 4♠    / purpose
+1396 / 6♣   + 5♠    / purse
+1397 / 6♣   + 6♠    / push
+1398 / 6♣   + 7♠    / put
+1399 / 6♣   + 8♠    / puzzle
+1400 / 6♣   + 9♠    / pyramid
+1401 / 6♣   + 10♠   / quality
+1402 / 6♣   + J♠    / quantum
+1403 / 6♣   + Q♠    / quarter
+1404 / 6♣   + K♠    / question
+1405 / 6♣   + JX♠   / quick
+1406 / 6♣   + QX♠   / quit
+1407 / 6♣   + KX♠   / quiz
+1408 / 7♣   + A♥    / quote
+1409 / 7♣   + 2♥    / rabbit
+1410 / 7♣   + 3♥    / raccoon
+1411 / 7♣   + 4♥    / race
+1412 / 7♣   + 5♥    / rack
+1413 / 7♣   + 6♥    / radar
+1414 / 7♣   + 7♥    / radio
+1415 / 7♣   + 8♥    / rail
+1416 / 7♣   + 9♥    / rain
+1417 / 7♣   + 10♥   / raise
+1418 / 7♣   + J♥    / rally
+1419 / 7♣   + Q♥    / ramp
+1420 / 7♣   + K♥    / ranch
+1421 / 7♣   + JX♥   / random
+1422 / 7♣   + QX♥   / range
+1423 / 7♣   + KX♥   / rapid
+1424 / 7♣   + A♦    / rare
+1425 / 7♣   + 2♦    / rate
+1426 / 7♣   + 3♦    / rather
+1427 / 7♣   + 4♦    / raven
+1428 / 7♣   + 5♦    / raw
+1429 / 7♣   + 6♦    / razor
+1430 / 7♣   + 7♦    / ready
+1431 / 7♣   + 8♦    / real
+1432 / 7♣   + 9♦    / reason
+1433 / 7♣   + 10♦   / rebel
+1434 / 7♣   + J♦    / rebuild
+1435 / 7♣   + Q♦    / recall
+1436 / 7♣   + K♦    / receive
+1437 / 7♣   + JX♦   / recipe
+1438 / 7♣   + QX♦   / record
+1439 / 7♣   + KX♦   / recycle
+1440 / 7♣   + A♣    / reduce
+1441 / 7♣   + 2♣    / reflect
+1442 / 7♣   + 3♣    / reform
+1443 / 7♣   + 4♣    / refuse
+1444 / 7♣   + 5♣    / region
+1445 / 7♣   + 6♣    / regret
+1446 / 7♣   + 7♣    / regular
+1447 / 7♣   + 8♣    / reject
+1448 / 7♣   + 9♣    / relax
+1449 / 7♣   + 10♣   / release
+1450 / 7♣   + J♣    / relief
+1451 / 7♣   + Q♣    / rely
+1452 / 7♣   + K♣    / remain
+1453 / 7♣   + JX♣   / remember
+1454 / 7♣   + QX♣   / remind
+1455 / 7♣   + KX♣   / remove
+1456 / 7♣   + A♠    / render
+1457 / 7♣   + 2♠    / renew
+1458 / 7♣   + 3♠    / rent
+1459 / 7♣   + 4♠    / reopen
+1460 / 7♣   + 5♠    / repair
+1461 / 7♣   + 6♠    / repeat
+1462 / 7♣   + 7♠    / replace
+1463 / 7♣   + 8♠    / report
+1464 / 7♣   + 9♠    / require
+1465 / 7♣   + 10♠   / rescue
+1466 / 7♣   + J♠    / resemble
+1467 / 7♣   + Q♠    / resist
+1468 / 7♣   + K♠    / resource
+1469 / 7♣   + JX♠   / response
+1470 / 7♣   + QX♠   / result
+1471 / 7♣   + KX♠   / retire
+1472 / 8♣   + A♥    / retreat
+1473 / 8♣   + 2♥    / return
+1474 / 8♣   + 3♥    / reunion
+1475 / 8♣   + 4♥    / reveal
+1476 / 8♣   + 5♥    / review
+1477 / 8♣   + 6♥    / reward
+1478 / 8♣   + 7♥    / rhythm
+1479 / 8♣   + 8♥    / rib
+1480 / 8♣   + 9♥    / ribbon
+1481 / 8♣   + 10♥   / rice
+1482 / 8♣   + J♥    / rich
+1483 / 8♣   + Q♥    / ride
+1484 / 8♣   + K♥    / ridge
+1485 / 8♣   + JX♥   / rifle
+1486 / 8♣   + QX♥   / right
+1487 / 8♣   + KX♥   / rigid
+1488 / 8♣   + A♦    / ring
+1489 / 8♣   + 2♦    / riot
+1490 / 8♣   + 3♦    / ripple
+1491 / 8♣   + 4♦    / risk
+1492 / 8♣   + 5♦    / ritual
+1493 / 8♣   + 6♦    / rival
+1494 / 8♣   + 7♦    / river
+1495 / 8♣   + 8♦    / road
+1496 / 8♣   + 9♦    / roast
+1497 / 8♣   + 10♦   / robot
+1498 / 8♣   + J♦    / robust
+1499 / 8♣   + Q♦    / rocket
+1500 / 8♣   + K♦    / romance
+1501 / 8♣   + JX♦   / roof
+1502 / 8♣   + QX♦   / rookie
+1503 / 8♣   + KX♦   / room
+1504 / 8♣   + A♣    / rose
+1505 / 8♣   + 2♣    / rotate
+1506 / 8♣   + 3♣    / rough
+1507 / 8♣   + 4♣    / round
+1508 / 8♣   + 5♣    / route
+1509 / 8♣   + 6♣    / royal
+1510 / 8♣   + 7♣    / rubber
+1511 / 8♣   + 8♣    / rude
+1512 / 8♣   + 9♣    / rug
+1513 / 8♣   + 10♣   / rule
+1514 / 8♣   + J♣    / run
+1515 / 8♣   + Q♣    / runway
+1516 / 8♣   + K♣    / rural
+1517 / 8♣   + JX♣   / sad
+1518 / 8♣   + QX♣   / saddle
+1519 / 8♣   + KX♣   / sadness
+1520 / 8♣   + A♠    / safe
+1521 / 8♣   + 2♠    / sail
+1522 / 8♣   + 3♠    / salad
+1523 / 8♣   + 4♠    / salmon
+1524 / 8♣   + 5♠    / salon
+1525 / 8♣   + 6♠    / salt
+1526 / 8♣   + 7♠    / salute
+1527 / 8♣   + 8♠    / same
+1528 / 8♣   + 9♠    / sample
+1529 / 8♣   + 10♠   / sand
+1530 / 8♣   + J♠    / satisfy
+1531 / 8♣   + Q♠    / satoshi
+1532 / 8♣   + K♠    / sauce
+1533 / 8♣   + JX♠   / sausage
+1534 / 8♣   + QX♠   / save
+1535 / 8♣   + KX♠   / say
+1536 / A♠   + A♥    / scale
+1537 / A♠   + 2♥    / scan
+1538 / A♠   + 3♥    / scare
+1539 / A♠   + 4♥    / scatter
+1540 / A♠   + 5♥    / scene
+1541 / A♠   + 6♥    / scheme
+1542 / A♠   + 7♥    / school
+1543 / A♠   + 8♥    / science
+1544 / A♠   + 9♥    / scissors
+1545 / A♠   + 10♥   / scorpion
+1546 / A♠   + J♥    / scout
+1547 / A♠   + Q♥    / scrap
+1548 / A♠   + K♥    / screen
+1549 / A♠   + JX♥   / script
+1550 / A♠   + QX♥   / scrub
+1551 / A♠   + KX♥   / sea
+1552 / A♠   + A♦    / search
+1553 / A♠   + 2♦    / season
+1554 / A♠   + 3♦    / seat
+1555 / A♠   + 4♦    / second
+1556 / A♠   + 5♦    / secret
+1557 / A♠   + 6♦    / section
+1558 / A♠   + 7♦    / security
+1559 / A♠   + 8♦    / seed
+1560 / A♠   + 9♦    / seek
+1561 / A♠   + 10♦   / segment
+1562 / A♠   + J♦    / select
+1563 / A♠   + Q♦    / sell
+1564 / A♠   + K♦    / seminar
+1565 / A♠   + JX♦   / senior
+1566 / A♠   + QX♦   / sense
+1567 / A♠   + KX♦   / sentence
+1568 / A♠   + A♣    / series
+1569 / A♠   + 2♣    / service
+1570 / A♠   + 3♣    / session
+1571 / A♠   + 4♣    / settle
+1572 / A♠   + 5♣    / setup
+1573 / A♠   + 6♣    / seven
+1574 / A♠   + 7♣    / shadow
+1575 / A♠   + 8♣    / shaft
+1576 / A♠   + 9♣    / shallow
+1577 / A♠   + 10♣   / share
+1578 / A♠   + J♣    / shed
+1579 / A♠   + Q♣    / shell
+1580 / A♠   + K♣    / sheriff
+1581 / A♠   + JX♣   / shield
+1582 / A♠   + QX♣   / shift
+1583 / A♠   + KX♣   / shine
+1584 / A♠   + A♠    / ship
+1585 / A♠   + 2♠    / shiver
+1586 / A♠   + 3♠    / shock
+1587 / A♠   + 4♠    / shoe
+1588 / A♠   + 5♠    / shoot
+1589 / A♠   + 6♠    / shop
+1590 / A♠   + 7♠    / short
+1591 / A♠   + 8♠    / shoulder
+1592 / A♠   + 9♠    / shove
+1593 / A♠   + 10♠   / shrimp
+1594 / A♠   + J♠    / shrug
+1595 / A♠   + Q♠    / shuffle
+1596 / A♠   + K♠    / shy
+1597 / A♠   + JX♠   / sibling
+1598 / A♠   + QX♠   / sick
+1599 / A♠   + KX♠   / side
+1600 / 2♠   + A♥    / siege
+1601 / 2♠   + 2♥    / sight
+1602 / 2♠   + 3♥    / sign
+1603 / 2♠   + 4♥    / silent
+1604 / 2♠   + 5♥    / silk
+1605 / 2♠   + 6♥    / silly
+1606 / 2♠   + 7♥    / silver
+1607 / 2♠   + 8♥    / similar
+1608 / 2♠   + 9♥    / simple
+1609 / 2♠   + 10♥   / since
+1610 / 2♠   + J♥    / sing
+1611 / 2♠   + Q♥    / siren
+1612 / 2♠   + K♥    / sister
+1613 / 2♠   + JX♥   / situate
+1614 / 2♠   + QX♥   / six
+1615 / 2♠   + KX♥   / size
+1616 / 2♠   + A♦    / skate
+1617 / 2♠   + 2♦    / sketch
+1618 / 2♠   + 3♦    / ski
+1619 / 2♠   + 4♦    / skill
+1620 / 2♠   + 5♦    / skin
+1621 / 2♠   + 6♦    / skirt
+1622 / 2♠   + 7♦    / skull
+1623 / 2♠   + 8♦    / slab
+1624 / 2♠   + 9♦    / slam
+1625 / 2♠   + 10♦   / sleep
+1626 / 2♠   + J♦    / slender
+1627 / 2♠   + Q♦    / slice
+1628 / 2♠   + K♦    / slide
+1629 / 2♠   + JX♦   / slight
+1630 / 2♠   + QX♦   / slim
+1631 / 2♠   + KX♦   / slogan
+1632 / 2♠   + A♣    / slot
+1633 / 2♠   + 2♣    / slow
+1634 / 2♠   + 3♣    / slush
+1635 / 2♠   + 4♣    / small
+1636 / 2♠   + 5♣    / smart
+1637 / 2♠   + 6♣    / smile
+1638 / 2♠   + 7♣    / smoke
+1639 / 2♠   + 8♣    / smooth
+1640 / 2♠   + 9♣    / snack
+1641 / 2♠   + 10♣   / snake
+1642 / 2♠   + J♣    / snap
+1643 / 2♠   + Q♣    / sniff
+1644 / 2♠   + K♣    / snow
+1645 / 2♠   + JX♣   / soap
+1646 / 2♠   + QX♣   / soccer
+1647 / 2♠   + KX♣   / social
+1648 / 2♠   + A♠    / sock
+1649 / 2♠   + 2♠    / soda
+1650 / 2♠   + 3♠    / soft
+1651 / 2♠   + 4♠    / solar
+1652 / 2♠   + 5♠    / soldier
+1653 / 2♠   + 6♠    / solid
+1654 / 2♠   + 7♠    / solution
+1655 / 2♠   + 8♠    / solve
+1656 / 2♠   + 9♠    / someone
+1657 / 2♠   + 10♠   / song
+1658 / 2♠   + J♠    / soon
+1659 / 2♠   + Q♠    / sorry
+1660 / 2♠   + K♠    / sort
+1661 / 2♠   + JX♠   / soul
+1662 / 2♠   + QX♠   / sound
+1663 / 2♠   + KX♠   / soup
+1664 / 3♠   + A♥    / source
+1665 / 3♠   + 2♥    / south
+1666 / 3♠   + 3♥    / space
+1667 / 3♠   + 4♥    / spare
+1668 / 3♠   + 5♥    / spatial
+1669 / 3♠   + 6♥    / spawn
+1670 / 3♠   + 7♥    / speak
+1671 / 3♠   + 8♥    / special
+1672 / 3♠   + 9♥    / speed
+1673 / 3♠   + 10♥   / spell
+1674 / 3♠   + J♥    / spend
+1675 / 3♠   + Q♥    / sphere
+1676 / 3♠   + K♥    / spice
+1677 / 3♠   + JX♥   / spider
+1678 / 3♠   + QX♥   / spike
+1679 / 3♠   + KX♥   / spin
+1680 / 3♠   + A♦    / spirit
+1681 / 3♠   + 2♦    / split
+1682 / 3♠   + 3♦    / spoil
+1683 / 3♠   + 4♦    / sponsor
+1684 / 3♠   + 5♦    / spoon
+1685 / 3♠   + 6♦    / sport
+1686 / 3♠   + 7♦    / spot
+1687 / 3♠   + 8♦    / spray
+1688 / 3♠   + 9♦    / spread
+1689 / 3♠   + 10♦   / spring
+1690 / 3♠   + J♦    / spy
+1691 / 3♠   + Q♦    / square
+1692 / 3♠   + K♦    / squeeze
+1693 / 3♠   + JX♦   / squirrel
+1694 / 3♠   + QX♦   / stable
+1695 / 3♠   + KX♦   / stadium
+1696 / 3♠   + A♣    / staff
+1697 / 3♠   + 2♣    / stage
+1698 / 3♠   + 3♣    / stairs
+1699 / 3♠   + 4♣    / stamp
+1700 / 3♠   + 5♣    / stand
+1701 / 3♠   + 6♣    / start
+1702 / 3♠   + 7♣    / state
+1703 / 3♠   + 8♣    / stay
+1704 / 3♠   + 9♣    / steak
+1705 / 3♠   + 10♣   / steel
+1706 / 3♠   + J♣    / stem
+1707 / 3♠   + Q♣    / step
+1708 / 3♠   + K♣    / stereo
+1709 / 3♠   + JX♣   / stick
+1710 / 3♠   + QX♣   / still
+1711 / 3♠   + KX♣   / sting
+1712 / 3♠   + A♠    / stock
+1713 / 3♠   + 2♠    / stomach
+1714 / 3♠   + 3♠    / stone
+1715 / 3♠   + 4♠    / stool
+1716 / 3♠   + 5♠    / story
+1717 / 3♠   + 6♠    / stove
+1718 / 3♠   + 7♠    / strategy
+1719 / 3♠   + 8♠    / street
+1720 / 3♠   + 9♠    / strike
+1721 / 3♠   + 10♠   / strong
+1722 / 3♠   + J♠    / struggle
+1723 / 3♠   + Q♠    / student
+1724 / 3♠   + K♠    / stuff
+1725 / 3♠   + JX♠   / stumble
+1726 / 3♠   + QX♠   / style
+1727 / 3♠   + KX♠   / subject
+1728 / 4♠   + A♥    / submit
+1729 / 4♠   + 2♥    / subway
+1730 / 4♠   + 3♥    / success
+1731 / 4♠   + 4♥    / such
+1732 / 4♠   + 5♥    / sudden
+1733 / 4♠   + 6♥    / suffer
+1734 / 4♠   + 7♥    / sugar
+1735 / 4♠   + 8♥    / suggest
+1736 / 4♠   + 9♥    / suit
+1737 / 4♠   + 10♥   / summer
+1738 / 4♠   + J♥    / sun
+1739 / 4♠   + Q♥    / sunny
+1740 / 4♠   + K♥    / sunset
+1741 / 4♠   + JX♥   / super
+1742 / 4♠   + QX♥   / supply
+1743 / 4♠   + KX♥   / supreme
+1744 / 4♠   + A♦    / sure
+1745 / 4♠   + 2♦    / surface
+1746 / 4♠   + 3♦    / surge
+1747 / 4♠   + 4♦    / surprise
+1748 / 4♠   + 5♦    / surround
+1749 / 4♠   + 6♦    / survey
+1750 / 4♠   + 7♦    / suspect
+1751 / 4♠   + 8♦    / sustain
+1752 / 4♠   + 9♦    / swallow
+1753 / 4♠   + 10♦   / swamp
+1754 / 4♠   + J♦    / swap
+1755 / 4♠   + Q♦    / swarm
+1756 / 4♠   + K♦    / swear
+1757 / 4♠   + JX♦   / sweet
+1758 / 4♠   + QX♦   / swift
+1759 / 4♠   + KX♦   / swim
+1760 / 4♠   + A♣    / swing
+1761 / 4♠   + 2♣    / switch
+1762 / 4♠   + 3♣    / sword
+1763 / 4♠   + 4♣    / symbol
+1764 / 4♠   + 5♣    / symptom
+1765 / 4♠   + 6♣    / syrup
+1766 / 4♠   + 7♣    / system
+1767 / 4♠   + 8♣    / table
+1768 / 4♠   + 9♣    / tackle
+1769 / 4♠   + 10♣   / tag
+1770 / 4♠   + J♣    / tail
+1771 / 4♠   + Q♣    / talent
+1772 / 4♠   + K♣    / talk
+1773 / 4♠   + JX♣   / tank
+1774 / 4♠   + QX♣   / tape
+1775 / 4♠   + KX♣   / target
+1776 / 4♠   + A♠    / task
+1777 / 4♠   + 2♠    / taste
+1778 / 4♠   + 3♠    / tattoo
+1779 / 4♠   + 4♠    / taxi
+1780 / 4♠   + 5♠    / teach
+1781 / 4♠   + 6♠    / team
+1782 / 4♠   + 7♠    / tell
+1783 / 4♠   + 8♠    / ten
+1784 / 4♠   + 9♠    / tenant
+1785 / 4♠   + 10♠   / tennis
+1786 / 4♠   + J♠    / tent
+1787 / 4♠   + Q♠    / term
+1788 / 4♠   + K♠    / test
+1789 / 4♠   + JX♠   / text
+1790 / 4♠   + QX♠   / thank
+1791 / 4♠   + KX♠   / that
+1792 / 5♠   + A♥    / theme
+1793 / 5♠   + 2♥    / then
+1794 / 5♠   + 3♥    / theory
+1795 / 5♠   + 4♥    / there
+1796 / 5♠   + 5♥    / they
+1797 / 5♠   + 6♥    / thing
+1798 / 5♠   + 7♥    / this
+1799 / 5♠   + 8♥    / thought
+1800 / 5♠   + 9♥    / three
+1801 / 5♠   + 10♥   / thrive
+1802 / 5♠   + J♥    / throw
+1803 / 5♠   + Q♥    / thumb
+1804 / 5♠   + K♥    / thunder
+1805 / 5♠   + JX♥   / ticket
+1806 / 5♠   + QX♥   / tide
+1807 / 5♠   + KX♥   / tiger
+1808 / 5♠   + A♦    / tilt
+1809 / 5♠   + 2♦    / timber
+1810 / 5♠   + 3♦    / time
+1811 / 5♠   + 4♦    / tiny
+1812 / 5♠   + 5♦    / tip
+1813 / 5♠   + 6♦    / tired
+1814 / 5♠   + 7♦    / tissue
+1815 / 5♠   + 8♦    / title
+1816 / 5♠   + 9♦    / toast
+1817 / 5♠   + 10♦   / tobacco
+1818 / 5♠   + J♦    / today
+1819 / 5♠   + Q♦    / toddler
+1820 / 5♠   + K♦    / toe
+1821 / 5♠   + JX♦   / together
+1822 / 5♠   + QX♦   / toilet
+1823 / 5♠   + KX♦   / token
+1824 / 5♠   + A♣    / tomato
+1825 / 5♠   + 2♣    / tomorrow
+1826 / 5♠   + 3♣    / tone
+1827 / 5♠   + 4♣    / tongue
+1828 / 5♠   + 5♣    / tonight
+1829 / 5♠   + 6♣    / tool
+1830 / 5♠   + 7♣    / tooth
+1831 / 5♠   + 8♣    / top
+1832 / 5♠   + 9♣    / topic
+1833 / 5♠   + 10♣   / topple
+1834 / 5♠   + J♣    / torch
+1835 / 5♠   + Q♣    / tornado
+1836 / 5♠   + K♣    / tortoise
+1837 / 5♠   + JX♣   / toss
+1838 / 5♠   + QX♣   / total
+1839 / 5♠   + KX♣   / tourist
+1840 / 5♠   + A♠    / toward
+1841 / 5♠   + 2♠    / tower
+1842 / 5♠   + 3♠    / town
+1843 / 5♠   + 4♠    / toy
+1844 / 5♠   + 5♠    / track
+1845 / 5♠   + 6♠    / trade
+1846 / 5♠   + 7♠    / traffic
+1847 / 5♠   + 8♠    / tragic
+1848 / 5♠   + 9♠    / train
+1849 / 5♠   + 10♠   / transfer
+1850 / 5♠   + J♠    / trap
+1851 / 5♠   + Q♠    / trash
+1852 / 5♠   + K♠    / travel
+1853 / 5♠   + JX♠   / tray
+1854 / 5♠   + QX♠   / treat
+1855 / 5♠   + KX♠   / tree
+1856 / 6♠   + A♥    / trend
+1857 / 6♠   + 2♥    / trial
+1858 / 6♠   + 3♥    / tribe
+1859 / 6♠   + 4♥    / trick
+1860 / 6♠   + 5♥    / trigger
+1861 / 6♠   + 6♥    / trim
+1862 / 6♠   + 7♥    / trip
+1863 / 6♠   + 8♥    / trophy
+1864 / 6♠   + 9♥    / trouble
+1865 / 6♠   + 10♥   / truck
+1866 / 6♠   + J♥    / true
+1867 / 6♠   + Q♥    / truly
+1868 / 6♠   + K♥    / trumpet
+1869 / 6♠   + JX♥   / trust
+1870 / 6♠   + QX♥   / truth
+1871 / 6♠   + KX♥   / try
+1872 / 6♠   + A♦    / tube
+1873 / 6♠   + 2♦    / tuition
+1874 / 6♠   + 3♦    / tumble
+1875 / 6♠   + 4♦    / tuna
+1876 / 6♠   + 5♦    / tunnel
+1877 / 6♠   + 6♦    / turkey
+1878 / 6♠   + 7♦    / turn
+1879 / 6♠   + 8♦    / turtle
+1880 / 6♠   + 9♦    / twelve
+1881 / 6♠   + 10♦   / twenty
+1882 / 6♠   + J♦    / twice
+1883 / 6♠   + Q♦    / twin
+1884 / 6♠   + K♦    / twist
+1885 / 6♠   + JX♦   / two
+1886 / 6♠   + QX♦   / type
+1887 / 6♠   + KX♦   / typical
+1888 / 6♠   + A♣    / ugly
+1889 / 6♠   + 2♣    / umbrella
+1890 / 6♠   + 3♣    / unable
+1891 / 6♠   + 4♣    / unaware
+1892 / 6♠   + 5♣    / uncle
+1893 / 6♠   + 6♣    / uncover
+1894 / 6♠   + 7♣    / under
+1895 / 6♠   + 8♣    / undo
+1896 / 6♠   + 9♣    / unfair
+1897 / 6♠   + 10♣   / unfold
+1898 / 6♠   + J♣    / unhappy
+1899 / 6♠   + Q♣    / uniform
+1900 / 6♠   + K♣    / unique
+1901 / 6♠   + JX♣   / unit
+1902 / 6♠   + QX♣   / universe
+1903 / 6♠   + KX♣   / unknown
+1904 / 6♠   + A♠    / unlock
+1905 / 6♠   + 2♠    / until
+1906 / 6♠   + 3♠    / unusual
+1907 / 6♠   + 4♠    / unveil
+1908 / 6♠   + 5♠    / update
+1909 / 6♠   + 6♠    / upgrade
+1910 / 6♠   + 7♠    / uphold
+1911 / 6♠   + 8♠    / upon
+1912 / 6♠   + 9♠    / upper
+1913 / 6♠   + 10♠   / upset
+1914 / 6♠   + J♠    / urban
+1915 / 6♠   + Q♠    / urge
+1916 / 6♠   + K♠    / usage
+1917 / 6♠   + JX♠   / use
+1918 / 6♠   + QX♠   / used
+1919 / 6♠   + KX♠   / useful
+1920 / 7♠   + A♥    / useless
+1921 / 7♠   + 2♥    / usual
+1922 / 7♠   + 3♥    / utility
+1923 / 7♠   + 4♥    / vacant
+1924 / 7♠   + 5♥    / vacuum
+1925 / 7♠   + 6♥    / vague
+1926 / 7♠   + 7♥    / valid
+1927 / 7♠   + 8♥    / valley
+1928 / 7♠   + 9♥    / valve
+1929 / 7♠   + 10♥   / van
+1930 / 7♠   + J♥    / vanish
+1931 / 7♠   + Q♥    / vapor
+1932 / 7♠   + K♥    / various
+1933 / 7♠   + JX♥   / vast
+1934 / 7♠   + QX♥   / vault
+1935 / 7♠   + KX♥   / vehicle
+1936 / 7♠   + A♦    / velvet
+1937 / 7♠   + 2♦    / vendor
+1938 / 7♠   + 3♦    / venture
+1939 / 7♠   + 4♦    / venue
+1940 / 7♠   + 5♦    / verb
+1941 / 7♠   + 6♦    / verify
+1942 / 7♠   + 7♦    / version
+1943 / 7♠   + 8♦    / very
+1944 / 7♠   + 9♦    / vessel
+1945 / 7♠   + 10♦   / veteran
+1946 / 7♠   + J♦    / viable
+1947 / 7♠   + Q♦    / vibrant
+1948 / 7♠   + K♦    / vicious
+1949 / 7♠   + JX♦   / victory
+1950 / 7♠   + QX♦   / video
+1951 / 7♠   + KX♦   / view
+1952 / 7♠   + A♣    / village
+1953 / 7♠   + 2♣    / vintage
+1954 / 7♠   + 3♣    / violin
+1955 / 7♠   + 4♣    / virtual
+1956 / 7♠   + 5♣    / virus
+1957 / 7♠   + 6♣    / visa
+1958 / 7♠   + 7♣    / visit
+1959 / 7♠   + 8♣    / visual
+1960 / 7♠   + 9♣    / vital
+1961 / 7♠   + 10♣   / vivid
+1962 / 7♠   + J♣    / vocal
+1963 / 7♠   + Q♣    / voice
+1964 / 7♠   + K♣    / void
+1965 / 7♠   + JX♣   / volcano
+1966 / 7♠   + QX♣   / volume
+1967 / 7♠   + KX♣   / vote
+1968 / 7♠   + A♠    / voyage
+1969 / 7♠   + 2♠    / wage
+1970 / 7♠   + 3♠    / wagon
+1971 / 7♠   + 4♠    / wait
+1972 / 7♠   + 5♠    / walk
+1973 / 7♠   + 6♠    / wall
+1974 / 7♠   + 7♠    / walnut
+1975 / 7♠   + 8♠    / want
+1976 / 7♠   + 9♠    / warfare
+1977 / 7♠   + 10♠   / warm
+1978 / 7♠   + J♠    / warrior
+1979 / 7♠   + Q♠    / wash
+1980 / 7♠   + K♠    / wasp
+1981 / 7♠   + JX♠   / waste
+1982 / 7♠   + QX♠   / water
+1983 / 7♠   + KX♠   / wave
+1984 / 8♠   + A♥    / way
+1985 / 8♠   + 2♥    / wealth
+1986 / 8♠   + 3♥    / weapon
+1987 / 8♠   + 4♥    / wear
+1988 / 8♠   + 5♥    / weasel
+1989 / 8♠   + 6♥    / weather
+1990 / 8♠   + 7♥    / web
+1991 / 8♠   + 8♥    / wedding
+1992 / 8♠   + 9♥    / weekend
+1993 / 8♠   + 10♥   / weird
+1994 / 8♠   + J♥    / welcome
+1995 / 8♠   + Q♥    / west
+1996 / 8♠   + K♥    / wet
+1997 / 8♠   + JX♥   / whale
+1998 / 8♠   + QX♥   / what
+1999 / 8♠   + KX♥   / wheat
+2000 / 8♠   + A♦    / wheel
+2001 / 8♠   + 2♦    / when
+2002 / 8♠   + 3♦    / where
+2003 / 8♠   + 4♦    / whip
+2004 / 8♠   + 5♦    / whisper
+2005 / 8♠   + 6♦    / wide
+2006 / 8♠   + 7♦    / width
+2007 / 8♠   + 8♦    / wife
+2008 / 8♠   + 9♦    / wild
+2009 / 8♠   + 10♦   / will
+2010 / 8♠   + J♦    / win
+2011 / 8♠   + Q♦    / window
+2012 / 8♠   + K♦    / wine
+2013 / 8♠   + JX♦   / wing
+2014 / 8♠   + QX♦   / wink
+2015 / 8♠   + KX♦   / winner
+2016 / 8♠   + A♣    / winter
+2017 / 8♠   + 2♣    / wire
+2018 / 8♠   + 3♣    / wisdom
+2019 / 8♠   + 4♣    / wise
+2020 / 8♠   + 5♣    / wish
+2021 / 8♠   + 6♣    / witness
+2022 / 8♠   + 7♣    / wolf
+2023 / 8♠   + 8♣    / woman
+2024 / 8♠   + 9♣    / wonder
+2025 / 8♠   + 10♣   / wood
+2026 / 8♠   + J♣    / wool
+2027 / 8♠   + Q♣    / word
+2028 / 8♠   + K♣    / work
+2029 / 8♠   + JX♣   / world
+2030 / 8♠   + QX♣   / worry
+2031 / 8♠   + KX♣   / worth
+2032 / 8♠   + A♠    / wrap
+2033 / 8♠   + 2♠    / wreck
+2034 / 8♠   + 3♠    / wrestle
+2035 / 8♠   + 4♠    / wrist
+2036 / 8♠   + 5♠    / write
+2037 / 8♠   + 6♠    / wrong
+2038 / 8♠   + 7♠    / yard
+2039 / 8♠   + 8♠    / year
+2040 / 8♠   + 9♠    / yellow
+2041 / 8♠   + 10♠   / you
+2042 / 8♠   + J♠    / young
+2043 / 8♠   + Q♠    / youth
+2044 / 8♠   + K♠    / zebra
+2045 / 8♠   + JX♠   / zero
+2046 / 8♠   + QX♠   / zone
+2047 / 8♠   + KX♠   / zoo
